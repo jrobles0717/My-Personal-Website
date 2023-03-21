@@ -32,7 +32,11 @@ function MainNavigation() {
             </a>
           </li>
           <li>
-            <a className="main-nav-link" href="#resume" onClick={() => {}}>
+            <a
+              className="main-nav-link main-nav-link-cta"
+              href="#resume"
+              onClick={() => {}}
+            >
               Resume
             </a>
           </li>
