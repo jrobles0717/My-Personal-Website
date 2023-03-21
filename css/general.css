@@ -79,7 +79,18 @@ body {
   line-height: 1;
   font-weight: 300;
   color: #555;
+  background-color: #fff;
 
   /* Only works if there is nothing absolutely positioned in relation to body */
   overflow-x: hidden;
+}
+
+/****************************/
+/* REUSABLE COMPONENT SECTION */
+/****************************/
+
+.container {
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
 }
