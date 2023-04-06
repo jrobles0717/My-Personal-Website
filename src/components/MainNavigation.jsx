@@ -1,4 +1,3 @@
-import "../../css/general.css";
 import "../../css/style.css";
 
 function MainNavigation() {
