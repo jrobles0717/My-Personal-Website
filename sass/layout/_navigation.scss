@@ -5,35 +5,34 @@
   gap: 4.8rem;
 }
 
-.main-nav-link:link,
-.main-nav-link:visited {
-  display: inline-block;
-  text-decoration: none;
-  color: $color-grey-light-1;
-  font-size: 1.8rem;
-  font-weight: 400;
-  transition: all 0.3s;
+.main-nav-link {
+  &:link,
+  &:visited {
+    display: inline-block;
+    text-decoration: none;
+    color: $color-grey-light-1;
+    font-size: 1.8rem;
+    font-weight: 400;
+    transition: all 0.3s;
+  }
+
+  &:hover,
+  &:active {
+    color: $color-grey-light-2;
+  }
 }
 
-.main-nav-link:hover,
-.main-nav-link:active {
-  color: $color-grey-light-2;
-}
+.main-nav-link-cta {
+  &:link,
+  &:visited {
+    // padding: 1.2rem 2.4rem;
+    // border: 2px solid $color-primary;
+    // border-radius: 2px;
+    color: $color-primary;
+  }
 
-.main-nav-link-cta,
-.main-nav-link-cta:link,
-.main-nav-link-cta:visited {
-  padding: 1.2rem 2.4rem;
-  // border: 2px solid #ffd700;
-  border: 2px solid $color-primary;
-  border-radius: 2px;
-  // color: #ffd700;
-  color: $color-primary;
-  /* background-image: linear-gradient(to top left, #4c4000, #fff7cc); */
-  /* background-image: linear-gradient(to top left, #ffd700, #fff7cc); */
-}
-
-.main-nav-link-cta:hover,
-.main-nav-link-cta:active {
-  transform: scale(1.05);
+  &:hover,
+  &:active {
+    transform: scale(1.05);
+  }
 }

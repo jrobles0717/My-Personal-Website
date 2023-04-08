@@ -78,6 +78,7 @@ html {
 
 body {
   box-sizing: border-box;
+  font-size: 1.6rem;
   font-family: "Archivo", sans-serif;
   line-height: 1;
   font-weight: 300;
@@ -88,15 +89,71 @@ body {
 /****************************/
 /* REUSABLE COMPONENT SECTION */
 /****************************/
+.container__sub {
+  display: flex; }
+
+.container__content {
+  display: grid;
+  grid-template-rows: calc(100vh - 9.6rem) repeat(4, min-content);
+  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+  background-color: #000033; }
+
+.heading--1 {
+  grid-column: col-start 1 / col-end 6;
+  grid-row: 3 / 4;
+  padding: 1rem 0;
+  font-size: 6.4rem; }
+
+.heading--2 {
+  grid-column: col-start 1 / col-end 8;
+  grid-row: 4 / 5;
+  padding: 1rem 0;
+  font-size: 6.4rem;
+  color: #a5aaae; }
+
+.btn {
+  grid-column: col-start 1 / col-end 3;
+  grid-row: 6 / 7;
+  display: inline-block;
+  padding: 1.2rem 2.4rem;
+  border: 2px solid #eead0e;
+  border-radius: 2px;
+  color: #eead0e;
+  background-color: inherit;
+  font-family: "Archivo", sans-serif;
+  font-size: 1.8rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s; }
+  .btn:hover {
+    background-color: rgba(238, 173, 14, 0.2);
+    transform: translateY(-3px);
+    box-shadow: 0 2rem 2rem rgba(139, 101, 8, 0.3); }
+  .btn:active, .btn:focus {
+    transform: translateY(-1px);
+    box-shadow: 0 1rem 1rem rgba(139, 101, 8, 0.3); }
+
+.email {
+  background-color: greenyellow;
+  grid-column: email-start / email-end;
+  grid-row: 1 / -1; }
+
+.footer {
+  background-color: olive;
+  grid-column: full-start / full-end;
+  grid-row: 6 / 7; }
+
 .header {
   background-color: #000033;
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
   display: flex;
   align-items: center;
   justify-content: end;
+  z-index: 10;
   /* Because we want header to be sticky later */
   height: 9.6rem;
-  padding: 0 4.8rem;
-  position: relative; }
+  padding: 0 4.8rem; }
 
 .main-nav-list {
   list-style: none;
@@ -104,29 +161,65 @@ body {
   align-items: center;
   gap: 4.8rem; }
 
-.main-nav-link:link,
-.main-nav-link:visited {
+.main-nav-link:link, .main-nav-link:visited {
   display: inline-block;
   text-decoration: none;
-  color: #e9ecef;
+  color: #ced4da;
   font-size: 1.8rem;
   font-weight: 400;
   transition: all 0.3s; }
 
-.main-nav-link:hover,
-.main-nav-link:active {
-  color: #ced4da; }
+.main-nav-link:hover, .main-nav-link:active {
+  color: #b9bfc4; }
 
-.main-nav-link-cta,
-.main-nav-link-cta:link,
-.main-nav-link-cta:visited {
-  padding: 1.2rem 2.4rem;
-  border: 2px solid #eead0e;
-  border-radius: 2px;
-  color: #eead0e;
-  /* background-image: linear-gradient(to top left, #4c4000, #fff7cc); */
-  /* background-image: linear-gradient(to top left, #ffd700, #fff7cc); */ }
+.main-nav-link-cta:link, .main-nav-link-cta:visited {
+  color: #eead0e; }
 
-.main-nav-link-cta:hover,
-.main-nav-link-cta:active {
+.main-nav-link-cta:hover, .main-nav-link-cta:active {
   transform: scale(1.05); }
+
+.social-media {
+  background-color: orangered;
+  grid-column: social-start / social-end;
+  grid-row: 1 / -1; }
+
+.hero {
+  color: #ced4da;
+  grid-column: full-start / full-end;
+  grid-row: 1 / 2;
+  display: grid;
+  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 10rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+  grid-template-rows: minmax(6rem, 1fr) repeat(8, minmax(min-content, max-content)) minmax(6rem, 1fr); }
+  .hero__text-1 {
+    grid-column: col-start 1 / col-end 3;
+    grid-row: 2 / 3;
+    padding: 1rem 0;
+    font-size: 1.8rem;
+    color: #eead0e; }
+  .hero__text-2 {
+    grid-column: col-start 1 / col-end 4;
+    grid-row: 5 / 6;
+    padding: 1rem 0 2rem 0;
+    line-height: 1.5;
+    font-size: 1.8rem;
+    color: #909499; }
+
+.about {
+  background-color: aqua;
+  grid-column: full-start / full-end;
+  grid-row: 2 / 3; }
+
+.experience {
+  background-color: chocolate;
+  grid-column: full-start / full-end;
+  grid-row: 3 / 4; }
+
+.projects {
+  background-color: deeppink;
+  grid-column: full-start / full-end;
+  grid-row: 4 / 5; }
+
+.contact {
+  background-color: royalblue;
+  grid-column: full-start / full-end;
+  grid-row: 5 / 6; }

@@ -6,8 +6,12 @@
 @import "base/typography";
 @import "base/utilities";
 
+@import "components/button";
+
+@import "layout/email";
 @import "layout/footer";
 @import "layout/header";
 @import "layout/navigation";
+@import "layout/social";
 
 @import "pages/home";

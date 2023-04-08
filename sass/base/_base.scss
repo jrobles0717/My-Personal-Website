@@ -70,8 +70,15 @@ $color-primary-dark: #8b6508;
 
 $color-secondary: #000033;
 
-$color-grey-light-1: #e9ecef;
-$color-grey-light-2: #ced4da;
+$color-grey-light-1: #ced4da;
+$color-grey-light-2: #b9bfc4;
+$color-grey-light-3: #a5aaae;
+$color-grey-light-4: #909499;
+
+$color-grey-dark-1: #797f84;
+$color-grey-dark-2: #686d71;
+$color-grey-dark-3: #575b5f;
+$color-grey-dark-4: #45484c;
 
 *,
 *::before,
@@ -94,6 +101,7 @@ html {
 
 body {
   box-sizing: border-box;
+  font-size: 1.6rem;
   font-family: "Archivo", sans-serif;
   line-height: 1;
   font-weight: 300;
@@ -116,4 +124,30 @@ body {
 // }
 
 .container {
+  &__sub {
+    display: flex;
+
+    // display: grid;
+    // grid-template-rows: 9.6rem minmax(min-content, max-content);
+    // grid-template-columns:
+    //   [social-start] 6.4rem [social-end full-start] minmax(6rem, 1fr)
+    //   [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end])
+    //   [center-end] minmax(6rem, 1fr)
+    //   [full-end email-start] 6.4rem [email-end];
+    // grid-template-columns:
+    //   [social-start] 6.4rem [social-end content-start] 1fr
+    //   [content-end email-start] 6.4rem [email-end];
+  }
+
+  &__content {
+    display: grid;
+    grid-template-rows: calc(100vh - 9.6rem) repeat(4, min-content);
+    grid-template-columns:
+      [full-start] minmax(6rem, 1fr)
+      [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end])
+      [center-end] minmax(6rem, 1fr)
+      [full-end];
+
+    background-color: $color-secondary;
+  }
 }

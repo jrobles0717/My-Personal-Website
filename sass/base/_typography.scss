@@ -1,0 +1,14 @@
+.heading--1 {
+  grid-column: col-start 1 / col-end 6;
+  grid-row: 3 / 4;
+  padding: 1rem 0;
+  font-size: 6.4rem;
+}
+
+.heading--2 {
+  grid-column: col-start 1 / col-end 8;
+  grid-row: 4 / 5;
+  padding: 1rem 0;
+  font-size: 6.4rem;
+  color: $color-grey-light-3;
+}
