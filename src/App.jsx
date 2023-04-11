@@ -13,20 +13,20 @@ function App() {
   return (
     <>
       <MainNavigation />
-      {/* <div className="container__sub"> */}
-      {/* <SocialMedia />
-        <Email /> */}
-      <main>
-        <div className="container__content">
-          <Hero />
-          <AboutMe />
-          <Experience />
-          <Projects />
-          <Contact />
-          <Footer />
-        </div>
-      </main>
-      {/* </div> */}
+      <div className="container__sub">
+        <SocialMedia />
+        <Email />
+        <main>
+          <div className="container__content">
+            <Hero />
+            <AboutMe />
+            <Experience />
+            <Projects />
+            <Contact />
+            <Footer />
+          </div>
+        </main>
+      </div>
     </>
   );
 }

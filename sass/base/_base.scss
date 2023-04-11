@@ -65,10 +65,15 @@ Medium: 11px
 // 	#cd950c
 // 	#b8860b
 // 	#8b6508
-$color-primary: #eead0e;
+// $color-primary: #eead0e;
+$color-primary: #f7ef8a;
 $color-primary-dark: #8b6508;
 
 $color-secondary: #000033;
+$color-secondary-light-1: #1a1a47;
+$color-secondary-light-2: #33335c;
+$color-secondary-light-3: #4d4d70;
+$color-secondary-light-4: #666685;
 
 $color-grey-light-1: #ced4da;
 $color-grey-light-2: #b9bfc4;
@@ -79,6 +84,8 @@ $color-grey-dark-1: #797f84;
 $color-grey-dark-2: #686d71;
 $color-grey-dark-3: #575b5f;
 $color-grey-dark-4: #45484c;
+
+$color-tertiary: rgb(134, 200, 35);
 
 *,
 *::before,
@@ -94,7 +101,7 @@ html {
   /* 10px / 16px = 0.625 = 62.5%*/
   /* Percentage of user's browser font-size setting */
   font-size: 62.5%;
-  overflow-x: hidden;
+  // overflow-x: hidden;
   /* Does NOT work on Safari */
   /* scroll-behavior: smooth; */
 }
@@ -125,23 +132,24 @@ body {
 
 .container {
   &__sub {
-    display: flex;
+    // display: flex;
 
-    // display: grid;
-    // grid-template-rows: 9.6rem minmax(min-content, max-content);
-    // grid-template-columns:
-    //   [social-start] 6.4rem [social-end full-start] minmax(6rem, 1fr)
-    //   [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end])
-    //   [center-end] minmax(6rem, 1fr)
-    //   [full-end email-start] 6.4rem [email-end];
-    // grid-template-columns:
-    //   [social-start] 6.4rem [social-end content-start] 1fr
-    //   [content-end email-start] 6.4rem [email-end];
+    display: grid;
+    grid-template-rows: minmax(min-content, max-content);
+    grid-template-columns:
+      [social-start] 6.4rem [social-end full-start] minmax(
+        min-content,
+        max-content
+      )
+      [full-end email-start] 6.4rem [email-end];
+    grid-template-columns:
+      [social-start] 6.4rem [social-end content-start] 1fr
+      [content-end email-start] 6.4rem [email-end];
   }
 
   &__content {
     display: grid;
-    grid-template-rows: calc(100vh - 9.6rem) repeat(4, min-content);
+    grid-template-rows: calc(1fr - 9.6rem) repeat(4, min-content);
     grid-template-columns:
       [full-start] minmax(6rem, 1fr)
       [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end])

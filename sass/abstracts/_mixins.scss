@@ -1,0 +1,46 @@
+@mixin grid-10x7 {
+  display: grid;
+  grid-template-columns:
+    [full-start] minmax(10rem, 1fr) [center-start] repeat(
+      8,
+      [col-start] minmax(min-content, 10rem) [col-end]
+    )
+    [center-end] minmax(6rem, 1fr) [full-end];
+  grid-template-rows:
+    6rem repeat(5, minmax(min-content, max-content))
+    minmax(6rem, 1fr);
+}
+
+@mixin grid-4x6 {
+  display: grid;
+  grid-template-columns:
+    [full-start] minmax(6rem, 1fr) [center-start] repeat(
+      2,
+      [col-start] minmax(min-content, max-content) [col-end]
+    )
+    [center-end] minmax(6rem, 1fr) [full-end];
+  grid-template-rows: minmax(6rem, 1fr) repeat(5, min-content);
+}
+
+@mixin grid-1x4 {
+  display: grid;
+  grid-template-columns: 40vw;
+  grid-template-rows: repeat(4, min-content);
+}
+
+@mixin grid-4x3 {
+  display: grid;
+  grid-template-columns:
+    [full-start] minmax(6rem, 1fr) [center-start] repeat(
+      2,
+      [col-start] minmax(min-content, max-content) [col-end]
+    )
+    [center-end] minmax(6rem, 1fr) [full-end];
+  grid-template-rows: repeat(3, min-content);
+}
+
+@mixin grid-2x1 {
+  display: grid;
+  // grid-template-columns: repeat(2, minmax(min-content, max-content));
+  grid-template-columns: max-content 35vw;
+}
