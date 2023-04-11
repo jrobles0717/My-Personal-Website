@@ -1,8 +1,14 @@
 import { MdKeyboardArrowRight, MdOutlineTexture } from "react-icons/md";
 function TableContent({ current }) {
-  if (current === "watric") {
-    return (
-      <>
+  return (
+    <>
+      <div
+        className={`experience__table--right-container experience__table--right-container--1 ${
+          current === "watric"
+            ? "experience__table--right-container--active"
+            : ""
+        }`}
+      >
         <h3 className="experience__table--right__heading heading--3">
           Web Development Intern{" "}
           <span className="heading__span">@ Watric Resources</span>
@@ -19,7 +25,6 @@ function TableContent({ current }) {
           </div>
           <div className="experience__table--right__box-item">
             <MdKeyboardArrowRight className="experience__table--right__icon" />
-
             <li className="experience__table--right__item paragraph paragraph-md">
               Update and added new information in some pages for new incoming
               products, about to drop in the market.
@@ -33,12 +38,14 @@ function TableContent({ current }) {
             </li>
           </div>
         </ul>
-      </>
-    );
-  }
-  if (current === "health") {
-    return (
-      <>
+      </div>
+      <div
+        className={`experience__table--right-container experience__table--right-container--2 ${
+          current === "health"
+            ? "experience__table--right-container--active"
+            : ""
+        }`}
+      >
         <h3 className="experience__table--right__heading heading--3">
           Back-end Developer{" "}
           <span className="heading__span">@ Health Computer Systems</span>
@@ -57,7 +64,6 @@ function TableContent({ current }) {
           </div>
           <div className="experience__table--right__box-item">
             <MdKeyboardArrowRight className="experience__table--right__icon" />
-
             <li className="experience__table--right__item paragraph paragraph-md">
               Developed file sharing, sending and transfer solutions interfacing
               with client and internal systems, applications, SW and platforms
@@ -81,12 +87,14 @@ function TableContent({ current }) {
             </li>
           </div>
         </ul>
-      </>
-    );
-  }
-  if (current === "cervantes") {
-    return (
-      <>
+      </div>
+      <div
+        className={`experience__table--right-container experience__table--right-container--3 ${
+          current === "cervantes"
+            ? "experience__table--right-container--active"
+            : ""
+        }`}
+      >
         <h3 className="experience__table--right__heading heading--3">
           Software Developer Consultant{" "}
           <span className="heading__span">@ The Cervantes Group</span>
@@ -105,7 +113,6 @@ function TableContent({ current }) {
           </div>
           <div className="experience__table--right__box-item">
             <MdKeyboardArrowRight className="experience__table--right__icon" />
-
             <li className="experience__table--right__item paragraph paragraph-md">
               Develop solutions with JavaScript, PHP and Ninja JS for Microjuris
               Application for customer named Centrix participating in all phases
@@ -127,12 +134,14 @@ function TableContent({ current }) {
             </li>
           </div>
         </ul>
-      </>
-    );
-  }
-  if (current === "fusion") {
-    return (
-      <>
+      </div>
+      <div
+        className={`experience__table--right-container experience__table--right-container--4 ${
+          current === "fusion"
+            ? "experience__table--right-container--active"
+            : ""
+        }`}
+      >
         <h3 className="experience__table--right__heading heading--3">
           Junior Full Stack Developer{" "}
           <span className="heading__span">@ ScoreInc</span>
@@ -149,7 +158,6 @@ function TableContent({ current }) {
           </div>
           <div className="experience__table--right__box-item">
             <MdKeyboardArrowRight className="experience__table--right__icon" />
-
             <li className="experience__table--right__item paragraph paragraph-md">
               Leading front-end and back-end development projects.
             </li>
@@ -161,9 +169,9 @@ function TableContent({ current }) {
             </li>
           </div>
         </ul>
-      </>
-    );
-  }
+      </div>
+    </>
+  );
 }
 
 export default TableContent;

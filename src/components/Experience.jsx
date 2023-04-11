@@ -51,7 +51,7 @@ function Experience() {
   };
 
   return (
-    <section className="experience">
+    <section className="experience mb-hg">
       <h2 className="experience__heading heading--2">Where I've Worked</h2>
       <div className="experience__table">
         <div className="experience__table--left">
