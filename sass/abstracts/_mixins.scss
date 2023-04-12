@@ -58,7 +58,19 @@
     max-content minmax(min-content, max-content);
 }
 
-@mixin grid-2x1 {
+@mixin grid-2x1--projects {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 0.6fr 0.4fr;
+}
+
+@mixin grid-1x5 {
+  display: grid;
+  grid-template-rows: repeat(5, minmax(min-content, max-content));
+}
+
+@mixin hyphens {
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
 }

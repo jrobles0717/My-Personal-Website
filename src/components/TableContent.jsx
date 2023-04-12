@@ -9,7 +9,7 @@ function TableContent({ current }) {
             : ""
         }`}
       >
-        <h3 className="experience__table--right__heading heading--3">
+        <h3 className="experience__table--right__heading heading--4">
           Web Development Intern{" "}
           <span className="heading__span">@ Watric Resources</span>
         </h3>
@@ -46,7 +46,7 @@ function TableContent({ current }) {
             : ""
         }`}
       >
-        <h3 className="experience__table--right__heading heading--3">
+        <h3 className="experience__table--right__heading heading--4">
           Back-end Developer{" "}
           <span className="heading__span">@ Health Computer Systems</span>
         </h3>
@@ -95,7 +95,7 @@ function TableContent({ current }) {
             : ""
         }`}
       >
-        <h3 className="experience__table--right__heading heading--3">
+        <h3 className="experience__table--right__heading heading--4">
           Software Developer Consultant{" "}
           <span className="heading__span">@ The Cervantes Group</span>
         </h3>
@@ -142,7 +142,7 @@ function TableContent({ current }) {
             : ""
         }`}
       >
-        <h3 className="experience__table--right__heading heading--3">
+        <h3 className="experience__table--right__heading heading--4">
           Junior Full Stack Developer{" "}
           <span className="heading__span">@ ScoreInc</span>
         </h3>

@@ -159,3 +159,19 @@ body {
     background-color: $color-secondary;
   }
 }
+
+.icon {
+  &:link,
+  &:visited {
+    color: $color-grey-light-2;
+    display: inline-block;
+    transition: all 0.5s;
+    cursor: pointer;
+  }
+
+  &:hover,
+  &:active {
+    color: $color-primary;
+    transform: scale(1.05);
+  }
+}
