@@ -44,3 +44,21 @@
   // grid-template-columns: repeat(2, minmax(min-content, max-content));
   grid-template-columns: max-content 35vw;
 }
+
+@mixin grid-4x5 {
+  display: grid;
+  grid-template-columns:
+    [full-start] minmax(6rem, 1fr) [center-start] repeat(
+      2,
+      [col-start] minmax(min-content, max-content) [col-end]
+    )
+    [center-end] minmax(6rem, 1fr) [full-end];
+  grid-template-rows:
+    minmax(6rem, 1fr) max-content minmax(min-content, max-content)
+    max-content minmax(min-content, max-content);
+}
+
+@mixin grid-2x1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}

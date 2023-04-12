@@ -355,9 +355,11 @@
 
 .projects {
   background-color: deeppink;
-  height: 50rem;
+  // height: 50rem;
   grid-column: full-start / full-end;
   grid-row: 4 / 5;
+
+  @include grid-4x5;
 
   &__heading {
     grid-column: col-start 1 / col-end 2;
@@ -382,6 +384,49 @@
       width: 30rem;
       display: block;
       margin-left: 1rem;
+    }
+  }
+
+  .projects__featured {
+    grid-column: col-start 1 / col-end 2;
+    grid-row: 3 / 4;
+
+    @include grid-2x1;
+    &--img {
+      grid-column: 1 / 2;
+      width: 100%;
+      height: auto;
+    }
+
+    &--text-box {
+      grid-column: 2 / 3;
+      &__heading {
+        &-sub {
+        }
+      }
+      &__paragraph {
+      }
+      &__list {
+      }
+
+      &__item {
+        &--1 {
+        }
+        &--2 {
+        }
+        &--3 {
+        }
+        &--4 {
+        }
+        &--5 {
+        }
+      }
+
+      &__link {
+      }
+
+      &__icon {
+      }
     }
   }
 }
