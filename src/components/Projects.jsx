@@ -1,9 +1,16 @@
 import { FiExternalLink, FiGithub } from "react-icons/fi";
 
 import Card from "./Card";
+import { useState } from "react";
 import voshMusic from "../../img/vosh-music.png";
 
 function Projects() {
+  const [toggleBtn, setToggleBtn] = useState(false);
+
+  const toggleBtnHandler = () => {
+    setToggleBtn(!toggleBtn);
+  };
+
   return (
     <section className="projects">
       <h2 className="projects__heading heading--2 mb-md">
@@ -63,7 +70,7 @@ function Projects() {
       <h3 className="projects__heading-2 heading--2 mb-md">
         Other Noteworthy Projects
       </h3>
-      <ul className="projects__other">
+      <ul className="projects__other mb-lg">
         <li className="projects__other__item projects__other__item--1">
           <Card project="nexter" />
         </li>
@@ -82,13 +89,32 @@ function Projects() {
         <li className="projects__other__item projects__other__item--6">
           <Card project="capstone" />
         </li>
-        <li className="projects__other__item projects__other__item--6">
-          <Card project="twitter" />
-        </li>
-        <li className="projects__other__item projects__other__item--6">
-          <Card project="guerrilla" />
-        </li>
+        {toggleBtn ? (
+          <>
+            <li
+              className={`projects__other__item projects__other__item--7 ${
+                toggleBtn ? "" : "projects__other__item--hidden"
+              }`}
+            >
+              <Card project="twitter" />
+            </li>
+            <li
+              className={`projects__other__item projects__other__item--8 ${
+                toggleBtn ? "" : "projects__other__item--hidden"
+              }`}
+            >
+              <Card project="guerrilla" />
+            </li>{" "}
+          </>
+        ) : (
+          ""
+        )}
       </ul>
+      <div className="projects__btn mb-hg">
+        <a className="btn" onClick={toggleBtnHandler}>
+          {`Show ${toggleBtn ? "Less" : "More"}`}
+        </a>
+      </div>
     </section>
   );
 }

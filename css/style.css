@@ -561,12 +561,16 @@ body {
     grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
     grid-gap: 1.5rem;
     justify-items: center;
-    list-style: none; }
+    list-style: none;
+    transition: all 0.5s; }
     .projects__other__item {
       transition: all 0.5s;
-      background-color: #1a1a47; }
+      background-color: #1a1a47;
+      opacity: 1; }
       .projects__other__item:hover {
         transform: translateY(-0.5rem); }
+      .projects__other__item--hidden {
+        opacity: 0; }
   .projects__card {
     padding: 4rem 3rem;
     position: relative;
@@ -632,6 +636,10 @@ body {
         font-family: inherit;
         letter-spacing: 0.1rem;
         color: #909499; }
+  .projects__btn {
+    grid-column: col-start 1 / col-end 2;
+    grid-row: 6 / 7;
+    justify-self: center; }
 
 .contact {
   background-color: royalblue;
