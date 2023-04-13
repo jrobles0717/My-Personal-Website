@@ -1,5 +1,6 @@
 import { FiExternalLink, FiGithub } from "react-icons/fi";
 
+import Card from "./Card";
 import voshMusic from "../../img/vosh-music.png";
 
 function Projects() {
@@ -8,7 +9,7 @@ function Projects() {
       <h2 className="projects__heading heading--2 mb-md">
         Some Things I've Built
       </h2>
-      <div className="projects__featured">
+      <div className="projects__featured mb-hg">
         <picture>
           <img
             src={voshMusic}
@@ -59,6 +60,35 @@ function Projects() {
           </div>
         </div>
       </div>
+      <h3 className="projects__heading-2 heading--2 mb-md">
+        Other Noteworthy Projects
+      </h3>
+      <ul className="projects__other">
+        <li className="projects__other__item projects__other__item--1">
+          <Card project="nexter" />
+        </li>
+        <li className="projects__other__item projects__other__item--2">
+          <Card project="trillo" />
+        </li>
+        <li className="projects__other__item projects__other__item--3">
+          <Card project="natours" />
+        </li>
+        <li className="projects__other__item projects__other__item--4">
+          <Card project="omnifood" />
+        </li>
+        <li className="projects__other__item projects__other__item--5">
+          <Card project="forkify" />
+        </li>
+        <li className="projects__other__item projects__other__item--6">
+          <Card project="capstone" />
+        </li>
+        <li className="projects__other__item projects__other__item--6">
+          <Card project="twitter" />
+        </li>
+        <li className="projects__other__item projects__other__item--6">
+          <Card project="guerrilla" />
+        </li>
+      </ul>
     </section>
   );
 }
