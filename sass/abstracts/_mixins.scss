@@ -83,6 +83,28 @@
   grid-template-rows: repeat(3, minmax(min-content, max-content));
 }
 
+// Contact container
+@mixin grid-3x5 {
+  display: grid;
+  grid-template-columns: minmax(6rem, 1fr) minmax(min-content, 50rem) minmax(
+      6rem,
+      1fr
+    );
+  grid-template-rows: minmax(6rem, 1fr) repeat(
+      4,
+      minmax(min-content, max-content)
+    );
+}
+
+// Footer container
+@mixin grid-3x2 {
+  display: grid;
+  grid-template-columns: minmax(6rem, 1fr) minmax(min-content, max-content) minmax(
+      6rem,
+      1fr
+    );
+}
+
 @mixin hyphens {
   -moz-hyphens: auto;
   -ms-hyphens: auto;

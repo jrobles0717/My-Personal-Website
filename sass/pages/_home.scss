@@ -171,6 +171,8 @@
   picture {
     grid-column: col-start 2 / col-end 2;
     grid-row: 3 / 5;
+    display: flex;
+    justify-content: center;
 
     img {
       grid-column: col-start 2 / col-end 2;
@@ -631,12 +633,43 @@
     grid-column: col-start 1 / col-end 2;
     grid-row: 6 / 7;
     justify-self: center;
+    letter-spacing: 0.1rem;
   }
 }
 
 .contact {
-  background-color: royalblue;
-  height: 50rem;
+  // background-color: royalblue;
+  // height: 50rem;
   grid-column: full-start / full-end;
   grid-row: 5 / 6;
+
+  @include grid-3x5;
+  justify-items: center;
+  row-gap: 1rem;
+
+  &__heading {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    color: $color-primary;
+    letter-spacing: 0.2rem;
+  }
+  &__title {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    font-size: 5rem;
+  }
+  &__paragraph {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+    line-height: 1.5;
+    // letter-spacing: 0.1rem;
+    font-weight: 400;
+    text-align: center;
+  }
+  &__btn {
+    grid-column: 2 / 3;
+    grid-row: 5 / 6;
+    text-decoration: none;
+    letter-spacing: 0.1rem;
+  }
 }
