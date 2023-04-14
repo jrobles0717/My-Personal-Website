@@ -18,7 +18,7 @@ function Card({ project }) {
                 <FiGithub className="projects__card--header__top--icon projects__card--header__top--icon__right" />
               </a>
               <a
-                href="https://jrobles-omnifood.netlify.app/"
+                href="https://nexter-jarobles.netlify.app"
                 target="_blank"
                 className="icon"
               >
@@ -27,7 +27,7 @@ function Card({ project }) {
             </div>
           </div>
           <h3 className="projects__card--header__title heading--3">
-            <a href="https://jrobles-omnifood.netlify.app/" target="_blank">
+            <a href="https://nexter-jarobles.netlify.app" target="_blank">
               Nexter
             </a>
           </h3>
@@ -65,7 +65,7 @@ function Card({ project }) {
                 <FiGithub className="projects__card--header__top--icon projects__card--header__top--icon__right" />
               </a>
               <a
-                href="https://jrobles-omnifood.netlify.app/"
+                href="https://trillo-jarobles.netlify.app"
                 target="_blank"
                 className="icon"
               >
@@ -74,7 +74,7 @@ function Card({ project }) {
             </div>
           </div>
           <h3 className="projects__card--header__title heading--3">
-            <a href="https://jrobles-omnifood.netlify.app/" target="_blank">
+            <a href="https://trillo-jarobles.netlify.app" target="_blank">
               Trillo
             </a>
           </h3>
@@ -112,7 +112,7 @@ function Card({ project }) {
                 <FiGithub className="projects__card--header__top--icon projects__card--header__top--icon__right" />
               </a>
               <a
-                href="https://jrobles-omnifood.netlify.app/"
+                href="https://natours-jarobles.netlify.app"
                 target="_blank"
                 className="icon"
               >
@@ -121,7 +121,7 @@ function Card({ project }) {
             </div>
           </div>
           <h3 className="projects__card--header__title heading--3">
-            <a href="https://jrobles-omnifood.netlify.app/" target="_blank">
+            <a href="https://natours-jarobles.netlify.app" target="_blank">
               Natours
             </a>
           </h3>
@@ -206,7 +206,7 @@ function Card({ project }) {
                 <FiGithub className="projects__card--header__top--icon projects__card--header__top--icon__right" />
               </a>
               <a
-                href="https://jrobles-omnifood.netlify.app/"
+                href="https://forkify-jrobles.netlify.app"
                 target="_blank"
                 className="icon"
               >
@@ -215,7 +215,7 @@ function Card({ project }) {
             </div>
           </div>
           <h3 className="projects__card--header__title heading--3">
-            <a href="https://jrobles-omnifood.netlify.app/" target="_blank">
+            <a href="https://forkify-jrobles.netlify.app" target="_blank">
               Forkify
             </a>
           </h3>
@@ -246,23 +246,26 @@ function Card({ project }) {
             </div>
             <div className="projects__card--header__top--right">
               <a
-                href="https://github.com/jrobles0717/Omnifood"
+                href="https://github.com/jrobles0717/Twitter-Style-Services"
                 target="_blank"
                 className="icon"
               >
                 <FiGithub className="projects__card--header__top--icon projects__card--header__top--icon__right" />
               </a>
-              <a
+              {/* <a
                 href="https://jrobles-omnifood.netlify.app/"
                 target="_blank"
                 className="icon"
               >
                 <FiExternalLink className="projects__card--header__top--icon projects__card--header__top--icon__right" />
-              </a>
+              </a> */}
             </div>
           </div>
           <h3 className="projects__card--header__title heading--3">
-            <a href="https://jrobles-omnifood.netlify.app/" target="_blank">
+            <a
+              href="https://github.com/jrobles0717/Twitter-Style-Services"
+              target="_blank"
+            >
               Twitter Style Services
             </a>
           </h3>
@@ -298,17 +301,20 @@ function Card({ project }) {
               >
                 <FiGithub className="projects__card--header__top--icon projects__card--header__top--icon__right" />
               </a>
-              <a
+              {/* <a
                 href="https://jrobles-omnifood.netlify.app/"
                 target="_blank"
                 className="icon"
               >
                 <FiExternalLink className="projects__card--header__top--icon projects__card--header__top--icon__right" />
-              </a>
+              </a> */}
             </div>
           </div>
           <h3 className="projects__card--header__title heading--3">
-            <a href="https://jrobles-omnifood.netlify.app/" target="_blank">
+            <a
+              href="https://github.com/jrobles0717/Guerrilla-App"
+              target="_blank"
+            >
               Guerrilla
             </a>
           </h3>
@@ -345,17 +351,17 @@ function Card({ project }) {
               >
                 <FiGithub className="projects__card--header__top--icon projects__card--header__top--icon__right" />
               </a>
-              <a
+              {/* <a
                 href="https://jrobles-omnifood.netlify.app/"
                 target="_blank"
                 className="icon"
               >
                 <FiExternalLink className="projects__card--header__top--icon projects__card--header__top--icon__right" />
-              </a>
+              </a> */}
             </div>
           </div>
           <h3 className="projects__card--header__title heading--3">
-            <a href="https://jrobles-omnifood.netlify.app/" target="_blank">
+            <a href="https://github.com/capstone-2022" target="_blank">
               AgroHub
             </a>
           </h3>
