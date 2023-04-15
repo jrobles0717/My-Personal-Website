@@ -60,33 +60,6 @@ Medium: 11px
 
 */
 
-// COLOR VARIABLES
-//  #eead0e
-// 	#cd950c
-// 	#b8860b
-// 	#8b6508
-// $color-primary: #eead0e;
-$color-primary: #f7ef8a;
-$color-primary-dark: #8b6508;
-
-$color-secondary: #000033;
-$color-secondary-light-1: #1a1a47;
-$color-secondary-light-2: #33335c;
-$color-secondary-light-3: #4d4d70;
-$color-secondary-light-4: #666685;
-
-$color-grey-light-1: #ced4da;
-$color-grey-light-2: #b9bfc4;
-$color-grey-light-3: #a5aaae;
-$color-grey-light-4: #909499;
-
-$color-grey-dark-1: #797f84;
-$color-grey-dark-2: #686d71;
-$color-grey-dark-3: #575b5f;
-$color-grey-dark-4: #45484c;
-
-$color-tertiary: rgb(134, 200, 35);
-
 *,
 *::before,
 *::after {
@@ -134,21 +107,22 @@ body {
   &__sub {
     // display: flex;
 
-    display: grid;
-    grid-template-rows: repeat(2, minmax(min-content, max-content));
-    grid-template-columns:
-      [social-start] 6.4rem [social-end full-start] minmax(
-        min-content,
-        max-content
-      )
-      [full-end email-start] 6.4rem [email-end];
+    // display: grid;
+    // grid-template-rows: repeat(2, minmax(min-content, max-content));
     // grid-template-columns:
-    //   [social-start] 6.4rem [social-end content-start] 1fr
-    //   [content-end email-start] 6.4rem [email-end];
+    //   [social-start] 6.4rem [social-end full-start] minmax(
+    //     min-content,
+    //     max-content
+    //   )
+    //   [full-end email-start] 6.4rem [email-end];
+    // grid-template-columns:
+    //   [social-start] 1fr [social-end content-start] 1fr
+    //   [content-end email-start] 1fr [email-end];
   }
 
   &__content {
     grid-row: 1 / 2;
+    // grid-column: content-start / content-end;
     display: grid;
     grid-template-rows: calc(1fr - 9.6rem) repeat(4, min-content);
     grid-template-columns:

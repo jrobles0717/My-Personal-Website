@@ -1,3 +1,4 @@
+// Hero Container
 @mixin grid-10x7 {
   display: grid;
   grid-template-columns:
@@ -11,6 +12,7 @@
     minmax(6rem, 1fr);
 }
 
+// About Container
 @mixin grid-4x6 {
   display: grid;
   grid-template-columns:
@@ -45,6 +47,7 @@
   grid-template-columns: max-content 35vw;
 }
 
+// Projects Container
 @mixin grid-4x5 {
   display: grid;
   grid-template-columns:
@@ -68,6 +71,7 @@
   grid-template-rows: repeat(5, minmax(min-content, max-content));
 }
 
+// Projects Container Cards
 @mixin grid-6x1 {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));

@@ -40,7 +40,7 @@ function Card({ project }) {
           <ul className="projects__card--footer__list">
             <li className="projects__card--footer__item">HTML5</li>
             <li className="projects__card--footer__item">SCSS</li>
-            <li className="projects__card--footer__item">JavaScript</li>
+            <li className="projects__card--footer__item">JS</li>
             <li className="projects__card--footer__item">Node</li>
             <li className="projects__card--footer__item">Netlify</li>
           </ul>
@@ -87,7 +87,7 @@ function Card({ project }) {
           <ul className="projects__card--footer__list">
             <li className="projects__card--footer__item">HTML5</li>
             <li className="projects__card--footer__item">SCSS</li>
-            <li className="projects__card--footer__item">JavaScript</li>
+            <li className="projects__card--footer__item">JS</li>
             <li className="projects__card--footer__item">Node</li>
             <li className="projects__card--footer__item">Netlify</li>
           </ul>
@@ -134,7 +134,7 @@ function Card({ project }) {
           <ul className="projects__card--footer__list">
             <li className="projects__card--footer__item">HTML5</li>
             <li className="projects__card--footer__item">SCSS</li>
-            <li className="projects__card--footer__item">JavaScript</li>
+            <li className="projects__card--footer__item">JS</li>
             <li className="projects__card--footer__item">Node</li>
             <li className="projects__card--footer__item">Netlify</li>
           </ul>
@@ -181,7 +181,7 @@ function Card({ project }) {
           <ul className="projects__card--footer__list">
             <li className="projects__card--footer__item">HTML5</li>
             <li className="projects__card--footer__item">CSS3</li>
-            <li className="projects__card--footer__item">JavaScript</li>
+            <li className="projects__card--footer__item">JS</li>
             <li className="projects__card--footer__item">Node</li>
             <li className="projects__card--footer__item">Netlify</li>
           </ul>
@@ -228,7 +228,7 @@ function Card({ project }) {
           <ul className="projects__card--footer__list">
             <li className="projects__card--footer__item">HTML5</li>
             <li className="projects__card--footer__item">SCSS</li>
-            <li className="projects__card--footer__item">JavaScript</li>
+            <li className="projects__card--footer__item">JS</li>
             <li className="projects__card--footer__item">Node</li>
             <li className="projects__card--footer__item">Netlify</li>
           </ul>
@@ -374,7 +374,6 @@ function Card({ project }) {
         <footer className="projects__card--footer mt-sm">
           <ul className="projects__card--footer__list">
             <li className="projects__card--footer__item">React</li>
-            <li className="projects__card--footer__item">CSS3</li>
             <li className="projects__card--footer__item">Java</li>
             <li className="projects__card--footer__item">PostgreSQL</li>
             <li className="projects__card--footer__item">Heroku</li>

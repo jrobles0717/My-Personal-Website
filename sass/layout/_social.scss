@@ -1,5 +1,37 @@
-.social-media {
-  background-color: $color-tertiary;
-  grid-column: social-start / social-end;
+.social {
+  // background-color: $color-tertiary;
+  // grid-column: social-start / social-end;
   grid-row: 1 / -1;
+
+  width: 4rem;
+  position: fixed;
+  bottom: 0;
+  left: 4rem;
+  right: auto;
+  z-index: 10;
+  // height: 100vh;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    align-items: center;
+    list-style: none;
+
+    &::after {
+      content: "";
+      width: 2px;
+      height: 10rem;
+      background-color: $color-grey-light-2;
+    }
+  }
+
+  &__item {
+  }
+
+  &__icon {
+    width: 2.2rem;
+    height: 2.2rem;
+    // color: $color-grey-light-4;
+  }
 }

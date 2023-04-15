@@ -7,14 +7,14 @@ import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import MainNavigation from "./components/MainNavigation";
 import Projects from "./components/Projects";
-import SocialMedia from "./components/SocialMedia";
+import Social from "./components/Social";
 
 function App() {
   return (
     <>
       <MainNavigation />
       <div className="container__sub">
-        <SocialMedia />
+        <Social />
         <Email />
         <main>
           <div className="container__content">
