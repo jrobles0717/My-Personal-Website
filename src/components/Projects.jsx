@@ -12,7 +12,7 @@ function Projects() {
   };
 
   return (
-    <section className="projects">
+    <section className="projects" id="projects">
       <h2 className="projects__heading heading--2 mb-md">
         Some Things I've Built
       </h2>

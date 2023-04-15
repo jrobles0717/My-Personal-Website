@@ -1,6 +1,6 @@
 function Contact() {
   return (
-    <section className="contact mb-hg">
+    <section className="contact mb-hg" id="contact">
       <p className="contact__heading paragraph">What's Next?</p>
       <h2 className="contact__title heading--2 mb-sm">Get In Touch</h2>
       <p className="contact__paragraph paragraph__md mb-md">

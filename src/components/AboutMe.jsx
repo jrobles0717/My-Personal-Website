@@ -4,7 +4,7 @@ import JohnPhoto from "../../img/jarp-about.jpeg";
 
 function AboutMe() {
   return (
-    <section className="about mb-hg">
+    <section className="about mb-hg" id="about">
       <h2 className="about__heading heading--2">About Me</h2>
       <div className="about__text">
         <p className="about__text-1 paragraph">

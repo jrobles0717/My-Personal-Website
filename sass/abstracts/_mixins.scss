@@ -30,6 +30,7 @@
   grid-template-rows: repeat(4, min-content);
 }
 
+// Experience Container
 @mixin grid-4x3 {
   display: grid;
   grid-template-columns:
@@ -38,7 +39,7 @@
       [col-start] minmax(min-content, max-content) [col-end]
     )
     [center-end] minmax(6rem, 1fr) [full-end];
-  grid-template-rows: repeat(3, min-content);
+  grid-template-rows: minmax(6rem, 1fr) repeat(2, min-content);
 }
 
 @mixin grid-2x1 {
