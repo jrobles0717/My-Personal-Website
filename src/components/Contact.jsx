@@ -1,6 +1,8 @@
+import Social from "./Social";
+
 function Contact() {
   return (
-    <section className="contact mb-hg" id="contact">
+    <section className="contact" id="contact">
       <p className="contact__heading paragraph">What's Next?</p>
       <h2 className="contact__title heading--2 mb-sm">Get In Touch</h2>
       <p className="contact__paragraph paragraph__md mb-md">
@@ -12,10 +14,12 @@ function Contact() {
         href="mailto:j_robles0717@yahoo.com"
         target="_blank"
         rel=""
-        className="contact__btn btn"
+        className="contact__btn btn mb-md"
       >
         Let's Talk
       </a>
+
+      <Social direction="row" />
     </section>
   );
 }

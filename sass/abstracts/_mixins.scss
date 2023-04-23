@@ -1,3 +1,44 @@
+// MEDIA QUERY MANAGER
+/* 
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800]   is where our normal styles apply
+1800 + :        Big desktop
+
+$breakpoint arguement choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+ORDER: Base + Typography > general layout + grid > page layout > components
+
+1em = 16px
+*/
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 37.5em) {
+      @content; // 600px
+    }
+  }
+  @if $breakpoint == tab-port {
+    @media only screen and (max-width: 56.25em) {
+      @content; // 900px
+    }
+  }
+  @if $breakpoint == tab-land {
+    @media only screen and (max-width: 75em) {
+      @content; // 1200px
+    }
+  }
+  @if $breakpoint == big-desktop {
+    @media only screen and (min-width: 112.5em) {
+      @content; // 1800px
+    }
+  }
+}
+
 // Hero Container
 @mixin grid-10x7 {
   display: grid;
@@ -45,7 +86,11 @@
 @mixin grid-2x1 {
   display: grid;
   // grid-template-columns: repeat(2, minmax(min-content, max-content));
-  grid-template-columns: max-content 35vw;
+  grid-template-columns: max-content 45vw;
+
+  @include respond(tab-port) {
+    grid-template-columns: max-content 55vw;
+  }
 }
 
 // Projects Container
@@ -64,7 +109,7 @@
 
 @mixin grid-2x1--projects {
   display: grid;
-  grid-template-columns: 0.6fr 0.4fr;
+  grid-template-columns: 1fr 1fr;
 }
 
 @mixin grid-1x5 {
@@ -89,14 +134,14 @@
 }
 
 // Contact container
-@mixin grid-3x5 {
+@mixin grid-3x6 {
   display: grid;
   grid-template-columns: minmax(6rem, 1fr) minmax(min-content, 50rem) minmax(
       6rem,
       1fr
     );
   grid-template-rows: minmax(6rem, 1fr) repeat(
-      4,
+      5,
       minmax(min-content, max-content)
     );
 }

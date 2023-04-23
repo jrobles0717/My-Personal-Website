@@ -1,10 +1,18 @@
 import "../../css/style.css";
 
+import { useEffect, useState } from "react";
+
 import resumeJARP from "../../img/Resume-JARP-Mar2023.pdf";
-import { useState } from "react";
 
 function MainNavigation() {
-  const [isOpen, SetIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+
+  const mobileNavHandler = () => {
+    setIsOpen(!isOpen);
+  };
+  useEffect(() => {
+    console.log(isOpen);
+  }, [isOpen]);
 
   const navLinkHandler = (e) => {
     ///////////////////////////////////////////////////////////
@@ -34,49 +42,89 @@ function MainNavigation() {
   };
 
   return (
-    <header className={`header`}>
-      <nav className="main-nav">
-        <ul className="main-nav-list">
-          <li>
-            <a className="main-nav-link" href="#" onClick={navLinkHandler}>
+    <header className={`navigation`}>
+      <div className="navigation__mobile">
+        <input
+          type="checkbox"
+          class="navigation__mobile__checkbox"
+          id="navi-toggle"
+        />
+        <label
+          for="navi-toggle"
+          class="navigation__mobile__button"
+          onClick={mobileNavHandler}
+        >
+          <span
+            class={`navigation__mobile__icon ${
+              isOpen ? "navigation__mobile__icon__close" : ""
+            }`}
+          >
+            &nbsp;
+          </span>
+        </label>
+
+        <div
+          class={`navigation__mobile__background ${
+            !isOpen ? "close-background" : "open-background"
+          }`}
+        >
+          &nbsp;
+        </div>
+      </div>
+      <nav
+        className={`navigation__main-nav ${
+          isOpen ? "navigation__main-nav__nav-open" : ""
+        }`}
+      >
+        <ul className="navigation__main-nav-list">
+          <li class="navigation__main-nav-item">
+            <a
+              className="navigation__main-nav-link"
+              href="#"
+              onClick={navLinkHandler}
+            >
               Home
             </a>
           </li>
-          <li>
-            <a className="main-nav-link" href="#about" onClick={navLinkHandler}>
+          <li class="navigation__main-nav-item">
+            <a
+              className="navigation__main-nav-link"
+              href="#about"
+              onClick={navLinkHandler}
+            >
               About Me
             </a>
           </li>
-          <li>
+          <li class="navigation__main-nav-item">
             <a
-              className="main-nav-link"
+              className="navigation__main-nav-link"
               href="#experience"
               onClick={navLinkHandler}
             >
               Experience
             </a>
           </li>
-          <li>
+          <li class="navigation__main-nav-item">
             <a
-              className="main-nav-link"
+              className="navigation__main-nav-link"
               href="#projects"
               onClick={navLinkHandler}
             >
               Projects
             </a>
           </li>
-          <li>
+          <li class="navigation__main-nav-item">
             <a
-              className="main-nav-link"
+              className="navigation__main-nav-link"
               href="#contact"
               onClick={navLinkHandler}
             >
               Contact
             </a>
           </li>
-          <li>
+          <li class="navigation__main-nav-item">
             <a
-              className="btn main-nav-link main-nav-link-cta"
+              className="btn navigation__main-nav-link navigation__main-nav-link-cta"
               href={resumeJARP}
               target="_blank"
               // download={"Resume-John-Robles"}

@@ -1,6 +1,4 @@
 .social {
-  // background-color: $color-tertiary;
-  // grid-column: social-start / social-end;
   grid-row: 1 / -1;
 
   width: 4rem;
@@ -9,7 +7,6 @@
   left: 4rem;
   right: auto;
   z-index: 10;
-  // height: 100vh;
 
   &__list {
     display: flex;
@@ -32,6 +29,35 @@
   &__icon {
     width: 2.2rem;
     height: 2.2rem;
-    // color: $color-grey-light-4;
+  }
+
+  @include respond(tab-port) {
+    display: none;
+  }
+}
+
+// Social row
+.social-row {
+  display: none;
+  grid-column: 2 / 3;
+  grid-row: 6 / 7;
+
+  &__list {
+    display: flex;
+    column-gap: 4rem;
+    align-items: center;
+    list-style: none;
+  }
+
+  &__item {
+  }
+
+  &__icon {
+    width: 2.6rem;
+    height: 2.6rem;
+  }
+
+  @include respond(tab-port) {
+    display: inline-block;
   }
 }

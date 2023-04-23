@@ -14,7 +14,7 @@ function App() {
     <>
       <MainNavigation />
       <div className="container__sub">
-        <Social />
+        <Social direction="column" />
         <Email />
         <main>
           <div className="container__content">
