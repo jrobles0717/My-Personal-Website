@@ -7,7 +7,7 @@ function Experience() {
   const [isWatric, setIsWatric] = useState(true);
   const [isHealth, setIsHealth] = useState(false);
   const [isCervantes, setIsCervantes] = useState(false);
-  const [isFusion, setIsFusion] = useState(false);
+  const [isScore, setIsScore] = useState(false);
   const [currentExp, setCurrentExp] = useState("watric");
 
   const experienceHandler = (e) => {
@@ -18,7 +18,7 @@ function Experience() {
     setIsWatric(true);
     setIsHealth(false);
     setIsCervantes(false);
-    setIsFusion(false);
+    setIsScore(false);
     setCurrentExp("watric");
     console.log("watric");
   };
@@ -27,7 +27,7 @@ function Experience() {
     setIsWatric(false);
     setIsHealth(true);
     setIsCervantes(false);
-    setIsFusion(false);
+    setIsScore(false);
     setCurrentExp("health");
     console.log("health computer systems");
   };
@@ -36,18 +36,18 @@ function Experience() {
     setIsWatric(false);
     setIsHealth(false);
     setIsCervantes(true);
-    setIsFusion(false);
+    setIsScore(false);
     setCurrentExp("cervantes");
     console.log("the cervantes group");
   };
-  const fusionHandler = (e) => {
+  const scoreHandler = (e) => {
     e.preventDefault();
     setIsWatric(false);
     setIsHealth(false);
     setIsCervantes(false);
-    setIsFusion(true);
-    setCurrentExp("fusion");
-    console.log("fusion");
+    setIsScore(true);
+    setCurrentExp("score");
+    console.log("score");
   };
 
   return (
@@ -115,20 +115,20 @@ function Experience() {
             </div>
             <div
               className="experience__table--left__item-box"
-              onClick={fusionHandler}
+              onClick={scoreHandler}
             >
               <div
                 className={`experience__table--left__item-line ${
-                  isFusion ? "experience__table--left__item-line-active" : ""
+                  isScore ? "experience__table--left__item-line-active" : ""
                 }`}
               ></div>
               <li>
                 <a
                   className={`experience__table--left__item ${
-                    isFusion ? "experience__table--left__item-selected" : ""
+                    isScore ? "experience__table--left__item-selected" : ""
                   }`}
                 >
-                  Fusion
+                  ScoreInc
                 </a>
               </li>
             </div>

@@ -252,6 +252,10 @@
       width: 30rem;
       display: block;
       margin-right: 1rem;
+
+      @include respond(tab-port-sm) {
+        width: 10rem;
+      }
     }
 
     &::after {
@@ -277,11 +281,19 @@
       margin-right: auto;
     }
 
+    @include respond(phone) {
+      row-gap: 4rem;
+    }
+
     &--left {
       grid-column: 1 / 2;
       &__list {
         list-style: none;
         color: $color-grey-light-3;
+
+        @include respond(phone) {
+          display: flex;
+        }
       }
 
       &__item {
@@ -330,6 +342,11 @@
     &--right {
       grid-column: 2 / 3;
 
+      @include respond(phone) {
+        grid-row: 2 / -1;
+        grid-column: 1 / -1;
+      }
+
       display: grid;
       grid-template-columns: minmax(min-content, 1fr);
       grid-template-rows: max-content;
@@ -363,11 +380,14 @@
 
       &__heading {
         grid-row: 1 / 2;
+        margin-bottom: 1rem;
       }
 
       &__date {
         grid-row: 2 / 3;
         color: $color-grey-light-2;
+        letter-spacing: 0.15rem;
+        word-spacing: 0.3rem;
       }
 
       &__list {
@@ -403,6 +423,10 @@
 
   @include grid-4x5;
 
+  @include respond(tab-port) {
+    grid-column: full-start / full-end;
+  }
+
   &__heading {
     grid-column: col-start 1 / col-end 2;
     grid-row: 2 / 3;
@@ -423,9 +447,17 @@
       content: "";
       background-color: $color-grey-light-1;
       height: 2px;
-      width: 30rem;
+      width: 25rem;
       display: block;
       margin-left: 1rem;
+
+      @include respond(tab-port) {
+        width: 22rem;
+      }
+
+      @include respond(tab-port-sm) {
+        width: 16rem;
+      }
     }
 
     &-2 {
@@ -446,6 +478,10 @@
       grid-column: 1 / 2;
       width: 100%;
       height: auto;
+
+      @include respond(tab-port) {
+        display: none;
+      }
     }
 
     &--text-box {
@@ -455,6 +491,20 @@
       justify-items: flex-end;
 
       @include grid-1x5;
+
+      @include respond(tab-port) {
+        grid-column: 1 / -1;
+
+        background-image: linear-gradient(
+            rgba($color-secondary, 0.8),
+            rgba($color-secondary, 0.8)
+          ),
+          url(../img/vosh-music.png);
+        background-size: 100%;
+        background-position: center;
+
+        justify-items: flex-start;
+      }
 
       &__heading {
         grid-row: 2 / 3;
@@ -476,6 +526,12 @@
         letter-spacing: 0.1rem;
 
         margin-left: -10%;
+
+        @include respond(tab-port) {
+          margin-left: 0;
+          background-color: transparent;
+          padding: 0;
+        }
       }
       &__list {
         grid-row: 4 / 5;
@@ -538,43 +594,10 @@
       &--hidden {
         opacity: 0;
       }
-
-      &--1 {
-        // background-color: crimson;
-        // width: 30rem;
-        // height: 30rem;
-      }
-      &--2 {
-        // background-color: burlywood;
-        // width: 30rem;
-        // height: 30rem;
-      }
-      &--3 {
-        // background-color: darkorange;
-        // width: 30rem;
-        // height: 30rem;
-      }
-      &--4 {
-        // background-color: hotpink;
-        // width: 30rem;
-        // height: 30rem;
-      }
-      &--5 {
-        // background-color: palegreen;
-        // width: 30rem;
-        // height: 30rem;
-      }
-      &--6 {
-        // background-color: aqua;
-        // width: 30rem;
-        // height: 30rem;
-      }
     }
   }
 
   &__card {
-    // height: 100%;
-    // justify-content: space-around;
     padding: 4rem 3rem;
     position: relative;
     justify-items: flex-start;

@@ -137,7 +137,7 @@ function TableContent({ current }) {
       </div>
       <div
         className={`experience__table--right-container experience__table--right-container--4 ${
-          current === "fusion"
+          current === "score"
             ? "experience__table--right-container--active"
             : ""
         }`}
@@ -147,7 +147,7 @@ function TableContent({ current }) {
           <span className="heading__span">@ ScoreInc</span>
         </h3>
         <p className="experience__table--right__date paragraph paragraph__sm mb-sm">
-          April - Present
+          April 2023 - Present
         </p>
         <ul className="experience__table--right__list">
           <div className="experience__table--right__box-item">

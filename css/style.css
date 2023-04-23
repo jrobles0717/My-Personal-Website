@@ -94,6 +94,12 @@ html {
   @media only screen and (max-width: 56.25em) {
     html {
       font-size: 56.25%; } }
+  @media only screen and (max-width: 46.875em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (max-width: 37.5em) {
+    html {
+      font-size: 43.75%; } }
 
 body {
   box-sizing: border-box;
@@ -704,6 +710,9 @@ body {
       width: 30rem;
       display: block;
       margin-right: 1rem; }
+      @media only screen and (max-width: 46.875em) {
+        .experience__heading::before {
+          width: 10rem; } }
     .experience__heading::after {
       content: "";
       background-color: #ced4da;
@@ -721,15 +730,25 @@ body {
     @media only screen and (max-width: 56.25em) {
       .experience__table {
         grid-template-columns: max-content 55vw; } }
+    @media only screen and (max-width: 37.5em) {
+      .experience__table {
+        grid-template-columns: 80vw;
+        grid-template-rows: 5rem 50vw; } }
     @media only screen and (max-width: 56.25em) {
       .experience__table {
         grid-column: full-start / full-end;
         margin-right: auto; } }
+    @media only screen and (max-width: 37.5em) {
+      .experience__table {
+        row-gap: 4rem; } }
     .experience__table--left {
       grid-column: 1 / 2; }
       .experience__table--left__list {
         list-style: none;
         color: #a5aaae; }
+        @media only screen and (max-width: 37.5em) {
+          .experience__table--left__list {
+            display: flex; } }
       .experience__table--left__item {
         display: inline-block;
         text-decoration: none;
@@ -761,6 +780,10 @@ body {
       grid-template-columns: minmax(min-content, 1fr);
       grid-template-rows: max-content;
       grid-row-gap: 1rem; }
+      @media only screen and (max-width: 37.5em) {
+        .experience__table--right {
+          grid-row: 2 / -1;
+          grid-column: 1 / -1; } }
       .experience__table--right-container {
         opacity: 0;
         transition: all 1s; }
@@ -779,10 +802,13 @@ body {
         .experience__table--right-container--active {
           opacity: 1; }
       .experience__table--right__heading {
-        grid-row: 1 / 2; }
+        grid-row: 1 / 2;
+        margin-bottom: 1rem; }
       .experience__table--right__date {
         grid-row: 2 / 3;
-        color: #b9bfc4; }
+        color: #b9bfc4;
+        letter-spacing: 0.15rem;
+        word-spacing: 0.3rem; }
       .experience__table--right__list {
         list-style: none;
         grid-row: 3 / 4;
@@ -804,6 +830,9 @@ body {
   display: grid;
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(2, [col-start] minmax(min-content, max-content) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
   grid-template-rows: minmax(6rem, 1fr) max-content minmax(min-content, max-content) max-content minmax(min-content, max-content); }
+  @media only screen and (max-width: 56.25em) {
+    .projects {
+      grid-column: full-start / full-end; } }
   .projects__heading {
     grid-column: col-start 1 / col-end 2;
     grid-row: 2 / 3;
@@ -821,9 +850,15 @@ body {
       content: "";
       background-color: #ced4da;
       height: 2px;
-      width: 30rem;
+      width: 25rem;
       display: block;
       margin-left: 1rem; }
+      @media only screen and (max-width: 56.25em) {
+        .projects__heading::after {
+          width: 22rem; } }
+      @media only screen and (max-width: 46.875em) {
+        .projects__heading::after {
+          width: 16rem; } }
     .projects__heading-2 {
       grid-column: col-start 1 / col-end 2;
       grid-row: 4 / 5;
@@ -838,12 +873,25 @@ body {
       grid-column: 1 / 2;
       width: 100%;
       height: auto; }
+      @media only screen and (max-width: 56.25em) {
+        .projects__featured--img {
+          display: none; } }
     .projects__featured--text-box {
       grid-column: 2 / 3;
       grid-row-gap: 1rem;
       justify-items: flex-end;
       display: grid;
       grid-template-rows: repeat(5, minmax(min-content, max-content)); }
+      @media only screen and (max-width: 56.25em) {
+        .projects__featured--text-box {
+          grid-template-columns: repeat(2, 1fr); } }
+      @media only screen and (max-width: 56.25em) {
+        .projects__featured--text-box {
+          grid-column: 1 / -1;
+          background-image: linear-gradient(rgba(0, 0, 51, 0.8), rgba(0, 0, 51, 0.8)), url(../img/vosh-music.png);
+          background-size: 100%;
+          background-position: center;
+          justify-items: flex-start; } }
       .projects__featured--text-box__heading {
         grid-row: 2 / 3;
         font-weight: 600;
@@ -859,6 +907,11 @@ body {
         padding: 3rem 2rem;
         letter-spacing: 0.1rem;
         margin-left: -10%; }
+        @media only screen and (max-width: 56.25em) {
+          .projects__featured--text-box__paragraph {
+            margin-left: 0;
+            background-color: transparent;
+            padding: 0; } }
       .projects__featured--text-box__list {
         grid-row: 4 / 5;
         list-style: none;

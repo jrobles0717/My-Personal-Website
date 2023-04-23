@@ -79,6 +79,16 @@ html {
     // 9px / 16px = 0.5625 = 56.25%
     font-size: 56.25%;
   }
+
+  @include respond(tab-port-sm) {
+    // 8px / 16px = 0.5 = 50%
+    font-size: 50%;
+  }
+
+  @include respond(phone) {
+    // 7px / 16px = 0.4375 = 43.75%
+    font-size: 43.75%;
+  }
   // overflow-x: hidden;
   /* Does NOT work on Safari */
   /* scroll-behavior: smooth; */
