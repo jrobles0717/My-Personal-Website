@@ -74,6 +74,10 @@ ORDER: Base + Typography > general layout + grid > page layout > components
   display: grid;
   grid-template-columns: 40vw;
   grid-template-rows: repeat(4, min-content);
+
+  @include respond(tab-port-sm) {
+    grid-template-columns: 1fr;
+  }
 }
 
 // Experience Container
