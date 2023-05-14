@@ -18,6 +18,8 @@
     grid-row: 3 / 4;
     font-size: 6.4rem;
 
+    animation: moveInRight 1s ease-out;
+
     @include respond(tab-land) {
       grid-column: center-start / col-end 8;
       font-size: 6rem;
@@ -35,6 +37,8 @@
     font-size: 6.4rem;
     color: $color-grey-light-3;
     margin-top: -2rem;
+
+    animation: moveInLeft 1s ease-out;
 
     @include respond(tab-land) {
       grid-column: center-start / col-end 8;
@@ -54,6 +58,10 @@
       word-spacing: 0.5rem;
       color: $color-primary;
 
+      animation-name: moveInLeft;
+      animation-duration: 1s;
+      animation-timing-function: ease-out;
+
       @include respond(tab-port) {
         grid-column: full-start / full-end;
       }
@@ -64,6 +72,8 @@
       grid-row: 5 / 6;
       word-spacing: 0.1rem;
       margin-bottom: 2rem;
+
+      animation: moveInRight 1s ease-out;
 
       @include respond(tab-port) {
         grid-column: full-start / col-end 6;

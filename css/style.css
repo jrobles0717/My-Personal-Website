@@ -15,6 +15,34 @@ ORDER: Base + Typography > general layout + grid > page layout > components
 
 1em = 16px
 */
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem); }
+  80% {
+    transform: translateX(1rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem); }
+  80% {
+    transform: translateX(-1rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
 /* 
 
 --- 01 TYPOGRAPHY SYSTEM
@@ -221,7 +249,9 @@ body {
   text-align: center;
   text-decoration: none;
   cursor: pointer;
-  transition: all 0.2s; }
+  transition: all 0.2s;
+  animation: moveInBottom 0.5s ease-out 0.75s;
+  animation-fill-mode: backwards; }
   .btn:hover {
     background-color: rgba(153, 237, 27, 0.2);
     transform: translateY(-3px);
@@ -541,7 +571,8 @@ body {
   .hero__heading--1 {
     grid-column: center-start / col-end 6;
     grid-row: 3 / 4;
-    font-size: 6.4rem; }
+    font-size: 6.4rem;
+    animation: moveInRight 1s ease-out; }
     @media only screen and (max-width: 75em) {
       .hero__heading--1 {
         grid-column: center-start / col-end 8;
@@ -555,7 +586,8 @@ body {
     grid-row: 4 / 5;
     font-size: 6.4rem;
     color: #a5aaae;
-    margin-top: -2rem; }
+    margin-top: -2rem;
+    animation: moveInLeft 1s ease-out; }
     @media only screen and (max-width: 75em) {
       .hero__heading--2 {
         grid-column: center-start / col-end 8;
@@ -568,7 +600,10 @@ body {
     grid-column: center-start / col-end 3;
     grid-row: 2 / 3;
     word-spacing: 0.5rem;
-    color: #99ed1b; }
+    color: #99ed1b;
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out; }
     @media only screen and (max-width: 56.25em) {
       .hero__text-1 {
         grid-column: full-start / full-end; } }
@@ -576,7 +611,8 @@ body {
     grid-column: center-start / col-end 5;
     grid-row: 5 / 6;
     word-spacing: 0.1rem;
-    margin-bottom: 2rem; }
+    margin-bottom: 2rem;
+    animation: moveInRight 1s ease-out; }
     @media only screen and (max-width: 56.25em) {
       .hero__text-2 {
         grid-column: full-start / col-end 6; } }
@@ -754,7 +790,7 @@ body {
     @media only screen and (max-width: 37.5em) {
       .experience__table {
         grid-template-columns: 80vw;
-        grid-template-rows: 5rem 50vw; } }
+        grid-template-rows: 5rem max-content; } }
     @media only screen and (max-width: 56.25em) {
       .experience__table {
         grid-column: full-start / full-end;

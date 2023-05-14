@@ -103,7 +103,7 @@ ORDER: Base + Typography > general layout + grid > page layout > components
 
   @include respond(phone) {
     grid-template-columns: 80vw;
-    grid-template-rows: 5rem 50vw;
+    grid-template-rows: 5rem max-content;
   }
 }
 
