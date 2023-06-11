@@ -31,6 +31,10 @@
   color: $color-grey-light-3;
   @include hyphens;
 
+  &__indent {
+    text-indent: 4rem;
+  }
+
   &__xs {
     font-size: 1.2rem;
     letter-spacing: 0.2rem;

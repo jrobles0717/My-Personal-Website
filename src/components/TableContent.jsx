@@ -153,19 +153,31 @@ function TableContent({ current }) {
           <div className="experience__table--right__box-item">
             <MdKeyboardArrowRight className="experience__table--right__icon" />
             <li className="experience__table--right__item paragraph paragraph-md">
-              Design and build applications using React, S(CSS) and Java.
+              Develop solution for front-end and back-end with React, TypeScript
+              and Node.
             </li>
           </div>
           <div className="experience__table--right__box-item">
             <MdKeyboardArrowRight className="experience__table--right__icon" />
             <li className="experience__table--right__item paragraph paragraph-md">
-              Leading front-end and back-end development projects.
+              Helping leading some way our team in order to keep growing and
+              improving our skills in coding as well as the business logic for
+              the current project.
             </li>
           </div>
           <div className="experience__table--right__box-item">
             <MdKeyboardArrowRight className="experience__table--right__icon" />
             <li className="experience__table--right__item paragraph paragraph-md">
-              Write documentation for current projects.
+              Developing in the current project for one of the top companies
+              around the world.
+            </li>
+          </div>
+          <div className="experience__table--right__box-item">
+            <MdKeyboardArrowRight className="experience__table--right__icon" />
+            <li className="experience__table--right__item paragraph paragraph-md">
+              Participate in the full Software Development Life Cycle (SDLC)
+              including requirements gathering, documentation, coding/execution,
+              code review/testing, implementation and reports creation.
             </li>
           </div>
         </ul>

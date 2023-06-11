@@ -7,17 +7,19 @@ function AboutMe() {
     <section className="about mb-hg" id="about">
       <h2 className="about__heading heading--2">About Me</h2>
       <div className="about__text">
-        <p className="about__text-1 paragraph">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit,
-          natus unde saepe beatae fuga deserunt id. Necessitatibus, dolorum.
-          Natus harum voluptatum voluptatem sint, quo quisquam sunt? Repudiandae
-          corrupti ipsum labore!
+        <p className="about__text-1 paragraph paragraph__indent">
+          Since I was a child, my passion for the technology has been the same.
+          For that reason, I decided to study Software Engineer in the
+          University of Puerto Rico - Mayaguez. After many certifications, I'm
+          capable to design and build websites for any type of clients from
+          scratch and also personalize it as much as clients wanted.
         </p>
-        <p className="about__text-2 paragraph">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
-          dolorum excepturi amet dolores, fugit commodi, enim fugiat pariatur
-          sunt dicta, quae laboriosam mollitia? Dolorum repellat exercitationem,
-          facilis doloremque et ab!
+        <p className="about__text-2 paragraph paragraph__indent">
+          Moreover, I've had the privilege of working with many companies
+          totally different areas which give me more experience learning from
+          experts in the technology field. Therefore, my main focus these days
+          is to design and develop projects from my current company in order to
+          keep growing together and improving or learning new things.
         </p>
         <p className="about__text-3 paragraph">
           Here are a few technologies I've been working with recently:
@@ -35,7 +37,9 @@ function AboutMe() {
           </div>
           <div className="about__text__box-item">
             <MdKeyboardArrowRight className="about__text__icon" />
-            <li className="about__text__item about__text__item-3">HTML5</li>
+            <li className="about__text__item about__text__item-3">
+              TypeScript
+            </li>
           </div>
           <div className="about__text__box-item">
             <MdKeyboardArrowRight className="about__text__icon" />

@@ -187,6 +187,8 @@ body {
   -ms-hyphens: auto;
   -webkit-hyphens: auto;
   hyphens: auto; }
+  .paragraph__indent {
+    text-indent: 4rem; }
   .paragraph__xs {
     font-size: 1.2rem;
     letter-spacing: 0.2rem;
@@ -330,7 +332,6 @@ body {
 /* STICKY NAVIGATION */
 /****************************/
 .sticky .navigation {
-  position: fixed;
   top: 0;
   bottom: 0;
   width: 100%;
