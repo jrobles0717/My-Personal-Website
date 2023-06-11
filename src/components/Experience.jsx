@@ -56,7 +56,7 @@ function Experience() {
       <div className="experience__table">
         <div className="experience__table--left">
           <ul className="experience__table--left__list">
-            <div
+            <li
               className="experience__table--left__item-box"
               onClick={watricHandler}
             >
@@ -65,17 +65,17 @@ function Experience() {
                   isWatric ? "experience__table--left__item-line-active" : ""
                 }`}
               ></div>
-              <li>
-                <a
+              <div>
+                <span
                   className={`experience__table--left__item ${
                     isWatric ? "experience__table--left__item-selected" : ""
                   }`}
                 >
                   Watric
-                </a>
-              </li>
-            </div>
-            <div
+                </span>
+              </div>
+            </li>
+            <li
               className="experience__table--left__item-box"
               onClick={healthHandler}
             >
@@ -84,17 +84,17 @@ function Experience() {
                   isHealth ? "experience__table--left__item-line-active" : ""
                 }`}
               ></div>
-              <li>
-                <a
+              <div>
+                <span
                   className={`experience__table--left__item ${
                     isHealth ? "experience__table--left__item-selected" : ""
                   }`}
                 >
                   Health Computer Systems
-                </a>
-              </li>
-            </div>
-            <div
+                </span>
+              </div>
+            </li>
+            <li
               className="experience__table--left__item-box"
               onClick={cervantesHandler}
             >
@@ -103,17 +103,17 @@ function Experience() {
                   isCervantes ? "experience__table--left__item-line-active" : ""
                 }`}
               ></div>
-              <li>
-                <a
+              <div>
+                <span
                   className={`experience__table--left__item ${
                     isCervantes ? "experience__table--left__item-selected" : ""
                   }`}
                 >
                   The Cervantes Group
-                </a>
-              </li>
-            </div>
-            <div
+                </span>
+              </div>
+            </li>
+            <li
               className="experience__table--left__item-box"
               onClick={scoreHandler}
             >
@@ -122,16 +122,16 @@ function Experience() {
                   isScore ? "experience__table--left__item-line-active" : ""
                 }`}
               ></div>
-              <li>
-                <a
+              <div>
+                <span
                   className={`experience__table--left__item ${
                     isScore ? "experience__table--left__item-selected" : ""
                   }`}
                 >
                   ScoreInc
-                </a>
-              </li>
-            </div>
+                </span>
+              </div>
+            </li>
           </ul>
         </div>
         <div className="experience__table--right">

@@ -20,8 +20,6 @@ function MainNavigation() {
 
     e.preventDefault();
     const href = e.target.getAttribute("href");
-    // console.log(e.target);
-    // console.log(e.target.getAttribute("class"));
 
     // Scroll back to top
     if (href === "#") {
@@ -34,7 +32,6 @@ function MainNavigation() {
     // Scroll to other links
     if (href !== "#" && href.startsWith("#")) {
       const sectionEl = document.querySelector(href);
-      // console.log(sectionEl);
       sectionEl.scrollIntoView({ behavior: "smooth" });
     }
 
@@ -42,7 +39,7 @@ function MainNavigation() {
   };
 
   return (
-    <header className={`navigation`}>
+    <header className="navigation">
       <div className="navigation__mobile">
         <input
           type="checkbox"
@@ -50,7 +47,7 @@ function MainNavigation() {
           id="navi-toggle"
         />
         <label
-          for="navi-toggle"
+          htmlFor="navi-toggle"
           class="navigation__mobile__button"
           onClick={mobileNavHandler}
         >
@@ -127,7 +124,6 @@ function MainNavigation() {
               className="btn navigation__main-nav-link navigation__main-nav-link-cta"
               href={resumeJARP}
               target="_blank"
-              // download={"Resume-John-Robles"}
             >
               Resume
             </a>

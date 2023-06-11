@@ -25,34 +25,38 @@ function AboutMe() {
           Here are a few technologies I've been working with recently:
         </p>
         <ul className="about__text__list">
-          <div className="about__text__box-item">
+          <li className="about__text__box-item">
             <MdKeyboardArrowRight className="about__text__icon" />
-            <li className="about__text__item about__text__item-1">React</li>
-          </div>
-          <div className="about__text__box-item">
+            <span className="about__text__item about__text__item-1">React</span>
+          </li>
+          <li className="about__text__box-item">
             <MdKeyboardArrowRight className="about__text__icon" />
-            <li className="about__text__item about__text__item-2">
+            <span className="about__text__item about__text__item-2">
               JavaScript (ES6+)
-            </li>
-          </div>
-          <div className="about__text__box-item">
+            </span>
+          </li>
+          <li className="about__text__box-item">
             <MdKeyboardArrowRight className="about__text__icon" />
-            <li className="about__text__item about__text__item-3">
+            <span className="about__text__item about__text__item-3">
               TypeScript
-            </li>
-          </div>
-          <div className="about__text__box-item">
+            </span>
+          </li>
+          <li className="about__text__box-item">
             <MdKeyboardArrowRight className="about__text__icon" />
-            <li className="about__text__item about__text__item-4">(S)CSS3</li>
-          </div>
-          <div className="about__text__box-item">
+            <span className="about__text__item about__text__item-4">
+              (S)CSS3
+            </span>
+          </li>
+          <li className="about__text__box-item">
             <MdKeyboardArrowRight className="about__text__icon" />
-            <li className="about__text__item about__text__item-5">Java</li>
-          </div>
-          <div className="about__text__box-item">
+            <span className="about__text__item about__text__item-5">Java</span>
+          </li>
+          <li className="about__text__box-item">
             <MdKeyboardArrowRight className="about__text__icon" />
-            <li className="about__text__item about__text__item-6">Node.js</li>
-          </div>
+            <span className="about__text__item about__text__item-6">
+              Node.js
+            </span>
+          </li>
         </ul>
       </div>
       <picture>

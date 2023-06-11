@@ -111,9 +111,9 @@ function Projects() {
         )}
       </ul>
       <div className="projects__btn mb-hg">
-        <a className="btn" onClick={toggleBtnHandler}>
+        <span className="btn" onClick={toggleBtnHandler}>
           {`Show ${toggleBtn ? "Less" : "More"}`}
-        </a>
+        </span>
       </div>
     </section>
   );
