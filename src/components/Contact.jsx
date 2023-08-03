@@ -6,9 +6,11 @@ function Contact() {
       <p className="contact__heading paragraph">What's Next?</p>
       <h2 className="contact__title heading--2 mb-sm">Get In Touch</h2>
       <p className="contact__paragraph paragraph__md mb-md">
-        For more information about me or you just want to say hello, feel free
-        to write me and I'll gladly answer you as soon as possible. I'm here to
-        help others to reach their achievements.
+        As a software engineer, I am passionate about leveraging my skills and
+        knowledge to provide valuable assistance and support. Whether you have
+        questions, need more information, or simply want to say hello, please
+        don't hesitate to reach out. I am committed to promptly responding and
+        helping you in any way I can. Let's work together to achieve your goals!
       </p>
       <a
         href="mailto:j_robles0717@yahoo.com"

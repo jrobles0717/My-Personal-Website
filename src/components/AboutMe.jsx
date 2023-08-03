@@ -8,21 +8,26 @@ function AboutMe() {
       <h2 className="about__heading heading--2">About Me</h2>
       <div className="about__text">
         <p className="about__text-1 paragraph paragraph__indent">
-          Since I was a child, my passion for the technology has been the same.
-          For that reason, I decided to study Software Engineer in the
-          University of Puerto Rico - Mayaguez. After many certifications, I'm
-          capable to design and build websites for any type of clients from
-          scratch and also personalize it as much as clients wanted.
+          Ever since my childhood, my unwavering passion for technology has
+          driven me forward. This led me to pursue a degree in Software
+          Engineering at the University of Puerto Rico - Mayaguez. Alongside my
+          academic journey, I have obtained numerous certifications that have
+          equipped me with the skills to design and construct websites from
+          scratch. I take pride in tailoring these websites to meet the unique
+          preferences and requirements of my clients.
         </p>
         <p className="about__text-2 paragraph paragraph__indent">
-          Moreover, I've had the privilege of working with many companies
-          totally different areas which give me more experience learning from
-          experts in the technology field. Therefore, my main focus these days
-          is to design and develop projects from my current company in order to
-          keep growing together and improving or learning new things.
+          Furthermore, I have been fortunate enough to collaborate with diverse
+          companies across various industries, enabling me to gain invaluable
+          experience and learn from experts in the field of technology.
+          Presently, my primary focus revolves around designing and developing
+          projects for my current company. This allows me to continuously grow
+          alongside the organization and further enhance my expertise by
+          exploring new avenues.
         </p>
         <p className="about__text-3 paragraph">
-          Here are a few technologies I've been working with recently:
+          Some of the recent technologies I have been actively working with
+          include:
         </p>
         <ul className="about__text__list">
           <li className="about__text__box-item">

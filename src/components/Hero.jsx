@@ -36,8 +36,9 @@ function Hero() {
       <h1 className="hero__heading--1">John Robles.</h1>
       <h2 className="hero__heading--2">I design and build websites.</h2>
       <p className="hero__text-2 paragraph">
-        I'm a software engineer with the passion to create new things.
-        Currently, working as a junior full stack developer at ScoreInc.
+        I am a dedicated software engineer driven by the desire to innovate and
+        create. Presently, I hold the position of a junior full stack developer
+        at ScoreInc.
       </p>
       <a href="#projects" className="btn" onClick={navLinkHandler}>
         Check out my latest projects!

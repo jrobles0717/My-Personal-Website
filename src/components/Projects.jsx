@@ -32,9 +32,9 @@ function Projects() {
             Vosh Music
           </h3>
           <p className="projects__featured--text-box__paragraph paragraph__md mb-sm">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit,
-            quibusdam ratione est pariatur ipsam at numquam accusantium nobis
-            eligendi.
+            The artist from Puerto Rico creates music with a fusion of
+            Electronic, Jazz, Chillwave, R&B, Rock, and House, resulting in a
+            captivating and dynamic sound.
           </p>
           <ul className="projects__featured--text-box__list mb-sm">
             <li className="projects__featured--text-box__item projects__featured--text-box__item--1">
@@ -72,22 +72,22 @@ function Projects() {
       </h3>
       <ul className="projects__other mb-lg">
         <li className="projects__other__item projects__other__item--1">
-          <Card project="nexter" />
+          <Card project="Nexter" />
         </li>
         <li className="projects__other__item projects__other__item--2">
-          <Card project="trillo" />
+          <Card project="Trillo" />
         </li>
         <li className="projects__other__item projects__other__item--3">
-          <Card project="natours" />
+          <Card project="Natours" />
         </li>
         <li className="projects__other__item projects__other__item--4">
-          <Card project="omnifood" />
+          <Card project="Omnifood" />
         </li>
         <li className="projects__other__item projects__other__item--5">
-          <Card project="forkify" />
+          <Card project="Forkify" />
         </li>
         <li className="projects__other__item projects__other__item--6">
-          <Card project="capstone" />
+          <Card project="Capstone" />
         </li>
         {toggleBtn ? (
           <>
@@ -96,14 +96,14 @@ function Projects() {
                 toggleBtn ? "" : "projects__other__item--hidden"
               }`}
             >
-              <Card project="twitter" />
+              <Card project="Twitter" />
             </li>
             <li
               className={`projects__other__item projects__other__item--8 ${
                 toggleBtn ? "" : "projects__other__item--hidden"
               }`}
             >
-              <Card project="guerrilla" />
+              <Card project="Guerrilla" />
             </li>{" "}
           </>
         ) : (
