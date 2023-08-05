@@ -3,7 +3,6 @@ import { defineConfig } from "vite";
 import { minify } from "terser";
 import react from "@vitejs/plugin-react";
 
-// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
     react(),
@@ -17,8 +16,8 @@ export default defineConfig({
       },
     },
     compression({
-      algorithm: "gzip", // Set the compression algorithm (gzip, brotli)
-      ext: ".gz", // Specify the compressed file extension
+      algorithm: "gzip",
+      ext: ".gz",
     }),
   ],
 });

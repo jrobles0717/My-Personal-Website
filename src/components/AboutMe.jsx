@@ -1,6 +1,7 @@
-import { MdKeyboardArrowRight, MdOutlineTexture } from "react-icons/md";
-
-import JohnPhoto from "../../img/jarp-about.jpeg";
+import { MdKeyboardArrowRight } from "react-icons/md";
+import jARP1200 from "../../img/jarp-about-1200.jpeg";
+import jARP400 from "../../img/jarp-about-400.jpeg";
+import jARP800 from "../../img/jarp-about-800.jpeg";
 
 function AboutMe() {
   return (
@@ -65,7 +66,15 @@ function AboutMe() {
         </ul>
       </div>
       <picture>
-        <img src={JohnPhoto} alt="John Robles Photo" className="about__img" />
+        <img
+          src={jARP1200}
+          srcSet={`${jARP400} 400w, ${jARP800} 800w, ${jARP1200} 1200w`}
+          sizes="(max-width: 800px) 400px, (max-width: 1200px) 800px, 1200px"
+          alt="John Robles Photo"
+          className="about__img"
+          width="1200"
+          height="800"
+        />
       </picture>
     </section>
   );

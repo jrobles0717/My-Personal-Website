@@ -368,14 +368,14 @@ body {
       display: flex;
       align-items: center;
       gap: 4.8rem; }
-    .navigation__main-nav-link:link, .navigation__main-nav-link:visited {
+    .navigation__main-nav-link--active:link, .navigation__main-nav-link--active:visited {
       display: inline-block;
       text-decoration: none;
       color: #ced4da;
       font-size: 1.8rem;
       font-weight: 400;
       transition: all 0.3s; }
-    .navigation__main-nav-link:hover, .navigation__main-nav-link:active {
+    .navigation__main-nav-link--active:hover, .navigation__main-nav-link--active:active {
       color: #b9bfc4; }
     .navigation__main-nav-link-cta:link, .navigation__main-nav-link-cta:visited {
       color: #99ed1b; }

@@ -2,7 +2,9 @@ import { FiExternalLink, FiGithub } from "react-icons/fi";
 
 import Card from "./Card";
 import { useState } from "react";
-import voshMusic from "../../img/vosh-music.png";
+import voshMusic1200 from "../../img/vosh-music-1200.png";
+import voshMusic400 from "../../img/vosh-music-400.png";
+import voshMusic800 from "../../img/vosh-music-800.png";
 
 function Projects() {
   const [toggleBtn, setToggleBtn] = useState(false);
@@ -19,9 +21,13 @@ function Projects() {
       <div className="projects__featured mb-hg">
         <picture>
           <img
-            src={voshMusic}
+            src={voshMusic800}
+            srcSet={`${voshMusic400} 400w, ${voshMusic800} 800w, ${voshMusic1200} 1200w`}
+            sizes="(max-width: 800px) 400px, (max-width: 1200px) 800px, 1200px"
             alt="Vosh Music Webpage"
             className="projects__featured--img"
+            width="800"
+            height="600"
           />
         </picture>
         <div className="projects__featured--text-box">
