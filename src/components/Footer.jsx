@@ -8,6 +8,7 @@ function Footer() {
           href="https://github.com/jrobles0717/My-Personal-Website"
           className="footer__copyright--link"
           target="_blank"
+          aria-label="Go to my personal website repository in GitHub"
         >
           <div className="footer__copyright--link__text">
             Designed & Built by John Robles

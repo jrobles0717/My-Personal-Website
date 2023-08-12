@@ -6,6 +6,7 @@ function Email() {
           href="mailto:j_robles0717@yahoo.com"
           className="icon"
           target="_blank"
+          aria-label="To send me an email"
         >
           j_robles0717@yahoo.com
         </a>

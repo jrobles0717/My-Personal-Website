@@ -16,7 +16,7 @@ function Social({ direction }) {
               href="https://github.com/jrobles0717"
               className="icon"
               target="_blank"
-              aria-label="GitHub"
+              aria-label="Link to my GitHub Profile"
             >
               <FiGithub className="social__icon" />
             </a>
@@ -26,7 +26,7 @@ function Social({ direction }) {
               href="https://www.instagram.com/j_robles0717/"
               className="icon"
               target="_blank"
-              aria-label="Instagram"
+              aria-label="Link to my Instagram Profile"
             >
               <FiInstagram className="social__icon" />
             </a>
@@ -36,7 +36,7 @@ function Social({ direction }) {
               href="https://twitter.com/j_robles0717"
               className="icon"
               target="_blank"
-              aria-label="Twitter"
+              aria-label="Link to my Twitter Profile"
             >
               <FiTwitter className="social__icon" />
             </a>
@@ -46,7 +46,7 @@ function Social({ direction }) {
               href="https://www.linkedin.com/in/john-andrew-robles-perez-b1a85a106/"
               className="icon"
               target="_blank"
-              aria-label="LinkedIn"
+              aria-label="link to my LinkedIn Profile"
             >
               <FiLinkedin className="social__icon" />
             </a>
@@ -56,7 +56,7 @@ function Social({ direction }) {
               href="https://www.facebook.com/johnandrew.robles/"
               className="icon"
               target="_blank"
-              aria-label="Facebook"
+              aria-label="Link to my Facebook Profile"
             >
               <FiFacebook className="social__icon" />
             </a>

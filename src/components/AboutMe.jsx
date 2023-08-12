@@ -1,7 +1,7 @@
 import { MdKeyboardArrowRight } from "react-icons/md";
-import jARP1200 from "../../img/jarp-about-1200.jpeg";
-import jARP400 from "../../img/jarp-about-400.jpeg";
-import jARP800 from "../../img/jarp-about-800.jpeg";
+import jARP1200 from "../../img/jarp-pic-1200.jpeg";
+import jARP400 from "../../img/jarp-pic-400.jpeg";
+import jARP800 from "../../img/jarp-pic-800.jpeg";
 
 function AboutMe() {
   return (

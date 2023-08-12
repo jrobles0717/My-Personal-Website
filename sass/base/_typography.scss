@@ -54,4 +54,10 @@
     font-weight: 300;
     @include hyphens;
   }
+  &__lg {
+    font-size: 1.8rem;
+    color: $color-grey-light-3;
+    font-weight: 300;
+    @include hyphens;
+  }
 }

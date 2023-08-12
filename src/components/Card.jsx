@@ -148,13 +148,23 @@ function Card({ project }) {
             <FiFolder className="projects__card--header__top--icon projects__card--header__top--icon__left" />
           </div>
           <div className="projects__card--header__top--right">
-            <a href={findGithubRepo(project)} target="_blank" className="icon">
+            <a
+              href={findGithubRepo(project)}
+              target="_blank"
+              className="icon"
+              aria-label={`Go to ${project} GitHub repository`}
+            >
               <FiGithub className="projects__card--header__top--icon projects__card--header__top--icon__right" />
             </a>
             {noWebsiteLink() ? (
               ""
             ) : (
-              <a href={findWebsite(project)} target="_blank" className="icon">
+              <a
+                href={findWebsite(project)}
+                target="_blank"
+                className="icon"
+                aria-label={`Go to the ${project} website`}
+              >
                 <FiExternalLink className="projects__card--header__top--icon projects__card--header__top--icon__right" />
               </a>
             )}
@@ -166,6 +176,7 @@ function Card({ project }) {
               noWebsiteLink() ? findGithubRepo(project) : findWebsite(project)
             }
             target="_blank"
+            aria-label={`Go to the ${project} website or GitHub repository`}
           >
             {project}
           </a>

@@ -13,12 +13,20 @@ function Projects() {
     setToggleBtn(!toggleBtn);
   };
 
+  const handleGoToLink = () => {
+    window.location.href = "http://vosh-music.com/";
+  };
+
   return (
     <section className="projects" id="projects">
       <h2 className="projects__heading heading--2 mb-md">
         Some Things I've Built
       </h2>
-      <div className="projects__featured mb-hg">
+      <div
+        className="projects__featured mb-hg"
+        onClick={handleGoToLink}
+        title="https://vosh-music.com/"
+      >
         <picture>
           <img
             src={voshMusic800}
@@ -38,9 +46,8 @@ function Projects() {
             Vosh Music
           </h3>
           <p className="projects__featured--text-box__paragraph paragraph__md mb-sm">
-            The artist from Puerto Rico creates music with a fusion of
-            Electronic, Jazz, Chillwave, R&B, Rock, and House, resulting in a
-            captivating and dynamic sound.
+            The Puerto Rican artist creates captivating and dynamic music by
+            fusing Electronic, Jazz, Chillwave, R&B, Rock, and House genres.
           </p>
           <ul className="projects__featured--text-box__list mb-sm">
             <li className="projects__featured--text-box__item projects__featured--text-box__item--1">
@@ -64,10 +71,16 @@ function Projects() {
               href="https://github.com/jrobles0717/Vos-Website"
               target="_blank"
               className="icon"
+              aria-label="Link to Vosh GitHub repository"
             >
               <FiGithub className="projects__featured--text-box__icon" />
             </a>
-            <a href="http://vosh-music.com/" target="_blank" className="icon">
+            <a
+              href="http://vosh-music.com/"
+              target="_blank"
+              className="icon"
+              aria-label="Link to Vosh website"
+            >
               <FiExternalLink className="projects__featured--text-box__icon" />
             </a>
           </div>

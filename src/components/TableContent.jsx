@@ -20,21 +20,24 @@ function TableContent({ current }) {
           <li className="experience__table--right__box-item">
             <MdKeyboardArrowRight className="experience__table--right__icon" />
             <p className="experience__table--right__item paragraph paragraph-md">
-              Fix the server bugs for the website.
+              Troubleshoot and resolve server bugs impacting the website's
+              functionality.
             </p>
           </li>
           <li className="experience__table--right__box-item">
             <MdKeyboardArrowRight className="experience__table--right__icon" />
             <p className="experience__table--right__item paragraph paragraph-md">
-              Update and added new information in some pages for new incoming
-              products, about to drop in the market.
+              Successfully updated and added new information to several pages,
+              specifically for upcoming products that are about to be launched
+              in the market.
             </p>
           </li>
           <li className="experience__table--right__box-item">
             <MdKeyboardArrowRight className="experience__table--right__icon" />
             <p className="experience__table--right__item paragraph paragraph-md">
-              Generated frontend and cloud solutions: Windows 10, Apache, PHP,
-              HTML, CSS, Heroku, HostGator.
+              Proficiently developed frontend and cloud solutions utilizing a
+              diverse stack of technologies, including Windows 10, Apache, PHP,
+              HTML, CSS, Heroku, and HostGator.
             </p>
           </li>
         </ul>
@@ -58,32 +61,37 @@ function TableContent({ current }) {
             <MdKeyboardArrowRight className="experience__table--right__icon" />
             <p className="experience__table--right__item paragraph paragraph-md">
               Designed, analyzed, documented, and deployed applications
-              utilizing XML, JSON, Java, Maven, Spring Boot, SFTP protocol, AWS,
-              and MS SQL Server.
+              utilizing a diverse range of cutting-edge technologies, including
+              XML, JSON, Java, Maven, Spring Boot, SFTP protocol, AWS, and MS
+              SQL Server.
             </p>
           </li>
           <li className="experience__table--right__box-item">
             <MdKeyboardArrowRight className="experience__table--right__icon" />
             <p className="experience__table--right__item paragraph paragraph-md">
-              Developed file sharing, sending and transfer solutions interfacing
-              with client and internal systems, applications, SW and platforms
-              using XML and JSON.
+              Developed robust file sharing, sending, and transfer solutions,
+              seamlessly interfacing with client and internal systems,
+              applications, software, and platforms. These solutions are built
+              using advanced technologies such as XML and JSON.
             </p>
           </li>
           <li className="experience__table--right__box-item">
             <MdKeyboardArrowRight className="experience__table--right__icon" />
             <p className="experience__table--right__item paragraph paragraph-md">
-              Performed tests and updates within XML, JSON environments in
-              addition to gathering requirements and producing documentation
-              with instructions for execution of coding solutions, design and
-              layouts for application.
+              Proficiently conducted comprehensive testing and updates within
+              XML and JSON environments. Additionally, I have excelled in
+              gathering requirements and producing meticulous documentation,
+              including precise instructions for executing coding solutions, as
+              well as designing and optimizing application layouts.
             </p>
           </li>
           <li className="experience__table--right__box-item">
             <MdKeyboardArrowRight className="experience__table--right__icon" />
             <p className="experience__table--right__item paragraph paragraph-md">
-              Managed and maintained Windows Server and SW written in Java,
-              Maven, XML, JSON offering technical support engineering L1-3.
+              Successfully managed and maintained Windows Server and software
+              written in Java, Maven, XML, and JSON. In addition, I have
+              provided technical support engineering at L1-3, offering
+              comprehensive assistance and troubleshooting expertise.
             </p>
           </li>
         </ul>
@@ -153,33 +161,39 @@ function TableContent({ current }) {
           <li className="experience__table--right__box-item">
             <MdKeyboardArrowRight className="experience__table--right__icon" />
             <p className="experience__table--right__item paragraph paragraph-md">
-              Develop solution for front-end and back-end with React, TypeScript
-              and Node.
+              Develop comprehensive front-end and back-end solutions using a
+              range of cutting-edge technologies, including React.js,
+              TypeScript, Node.js, Contentful, Bit.dev, Auth0, Pulumi, and AWS.
             </p>
           </li>
           <li className="experience__table--right__box-item">
             <MdKeyboardArrowRight className="experience__table--right__icon" />
             <p className="experience__table--right__item paragraph paragraph-md">
-              Leading my team in many areas when they have doubts regarding
-              their ticket in order to accomplish the goal, showing them a
-              solution approach and help them to improve in their coding skills
-              based on my experience.
+              Provide guidance, leadership, and solutions to my team,
+              facilitating goal achievement while actively contributing to their
+              coding skills growth through constructive feedback and leveraging
+              my experience.
             </p>
           </li>
           <li className="experience__table--right__box-item">
             <MdKeyboardArrowRight className="experience__table--right__icon" />
             <p className="experience__table--right__item paragraph paragraph-md">
-              Developing in the current project for one of the top companies
-              around the world.
+              As a key contributor to an ongoing project at a prominent global
+              company, actively involved in development and driving a 50%
+              improvement in project performance through close collaboration
+              with the team and leveraging expertise in software development.
             </p>
           </li>
           <li className="experience__table--right__box-item">
             <MdKeyboardArrowRight className="experience__table--right__icon" />
             <p className="experience__table--right__item paragraph paragraph-md">
-              Participate in Continuous Integration / Continuous Deployment
-              (CI/CD) and the Full Software Development Life Cycle (SDLC)
-              including requirements gathering, documentation, coding/execution,
-              code review/testing, implementation and reports creation.
+              Participate in all facets of the Full Software Development Life
+              Cycle (SDLC), encompassing requirements gathering, meticulous
+              documentation, proficient coding and execution, thorough code
+              review and testing, seamless implementation, and generation of
+              comprehensive reports. Actively contribute to Continuous
+              Integration/Continuous Deployment (CI/CD) processes throughout the
+              development journey.
             </p>
           </li>
         </ul>

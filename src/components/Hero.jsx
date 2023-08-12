@@ -39,7 +39,11 @@ function Hero() {
         create. Presently, I hold the position of a junior full stack developer
         at ScoreInc.
       </p>
-      <AnchorLink className="btn" href="#projects">
+      <AnchorLink
+        className="btn"
+        href="#projects"
+        title="Go to projects section"
+      >
         Check out my latest projects!
       </AnchorLink>
     </section>

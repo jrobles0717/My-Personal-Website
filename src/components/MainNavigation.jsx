@@ -79,6 +79,8 @@ function MainNavigation() {
             <AnchorLink
               className="navigation__main-nav-link--active"
               href="#home"
+              onClick={() => setIsOpen(!isOpen)}
+              title="Go to home section"
             >
               Home
             </AnchorLink>
@@ -87,10 +89,8 @@ function MainNavigation() {
             <AnchorLink
               className="navigation__main-nav-link--active"
               href="#about"
-
-              // onClick={() =>
-              //   aboutRef.current.scrollIntoView({ behavior: "smooth" })
-              // }
+              onClick={() => setIsOpen(!isOpen)}
+              title="Go to about me section"
             >
               About Me
             </AnchorLink>
@@ -99,10 +99,8 @@ function MainNavigation() {
             <AnchorLink
               className="navigation__main-nav-link--active"
               href="#experience"
-
-              // onClick={() =>
-              //   experienceRef.current.scrollIntoView({ behavior: "smooth" })
-              // }
+              onClick={() => setIsOpen(!isOpen)}
+              title="Go to experience section"
             >
               Experience
             </AnchorLink>
@@ -111,10 +109,8 @@ function MainNavigation() {
             <AnchorLink
               className="navigation__main-nav-link--active"
               href="#projects"
-
-              // onClick={() =>
-              //   projectsRef.current.scrollIntoView({ behavior: "smooth" })
-              // }
+              onClick={() => setIsOpen(!isOpen)}
+              title="Go to projects section"
             >
               Projects
             </AnchorLink>
@@ -123,10 +119,8 @@ function MainNavigation() {
             <AnchorLink
               className="navigation__main-nav-link--active"
               href="#contact"
-
-              // onClick={() =>
-              //   contactRef.current.scrollIntoView({ behavior: "smooth" })
-              // }
+              onClick={() => setIsOpen(!isOpen)}
+              title="Go to contact section"
             >
               Contact
             </AnchorLink>
@@ -137,6 +131,7 @@ function MainNavigation() {
               href={resumeJARP}
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Link to my Resume"
             >
               Resume
             </a>

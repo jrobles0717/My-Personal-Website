@@ -130,7 +130,7 @@
         margin: 1rem;
       }
 
-      &-link {
+      &-link--active {
         &:link,
         &:visited {
           display: inline-block;
@@ -337,15 +337,11 @@
 
         &::before {
           transform: rotate(135deg);
-          // transform: rotate(225deg);
-          // transform: rotate(495deg);
           top: 0;
         }
 
         &::after {
           transform: rotate(-135deg);
-          // transform: rotate(-225deg);
-          // transform: rotate(-495deg);
           top: 0;
         }
       }
