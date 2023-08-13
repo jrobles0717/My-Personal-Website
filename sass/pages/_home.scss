@@ -13,6 +13,10 @@
     grid-gap: 3rem;
   }
 
+  @include respond(phone) {
+    grid-column: 2 / 3;
+  }
+
   &__heading--1 {
     grid-column: center-start / col-end 6;
     grid-row: 3 / 4;
@@ -78,6 +82,9 @@
       @include respond(tab-port) {
         grid-column: full-start / col-end 6;
       }
+
+      @include respond(phone) {
+      }
     }
   }
 
@@ -95,6 +102,10 @@
 
   @include grid-4x6;
   grid-gap: 2rem;
+
+  @include respond(phone) {
+    grid-column: 2 / 3;
+  }
 
   // @include respond(tab-port) {
   //   grid-column: full-start / full-end;
@@ -168,7 +179,7 @@
     &__list {
       // grid-column: col-start 1 / col-end 1;
       grid-row: 4 / 5;
-      font-size: 1.4rem;
+      font-size: 2rem;
       color: $color-grey-light-3;
 
       display: grid;
@@ -265,6 +276,10 @@
 
   @include grid-4x3;
   grid-gap: 2rem;
+
+  @include respond(phone) {
+    grid-column: 2 / 3;
+  }
 
   &__heading {
     grid-column: col-start 1 / col-end 2;
@@ -460,6 +475,10 @@
     grid-column: full-start / full-end;
   }
 
+  @include respond(phone) {
+    grid-column: 2 / 3;
+  }
+
   &__heading {
     grid-column: col-start 1 / col-end 2;
     grid-row: 2 / 3;
@@ -569,7 +588,7 @@
       &__list {
         grid-row: 4 / 5;
         list-style: none;
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         letter-spacing: 0.2rem;
         font-weight: 300;
         display: flex;
@@ -741,6 +760,10 @@
   @include grid-3x6;
   justify-items: center;
   row-gap: 1rem;
+
+  @include respond(phone) {
+    grid-column: 2 / 3;
+  }
 
   &__heading {
     grid-column: 2 / 3;

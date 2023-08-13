@@ -39,13 +39,13 @@ function Projects() {
           />
         </picture>
         <div className="projects__featured--text-box">
-          <p className="projects__featured--text-box__heading-sub paragraph__xs">
+          <p className="projects__featured--text-box__heading-sub paragraph__md">
             Featured Project
           </p>
           <h3 className="projects__featured--text-box__heading heading--3 mb-sm">
             Vosh Music
           </h3>
-          <p className="projects__featured--text-box__paragraph paragraph__md mb-sm">
+          <p className="projects__featured--text-box__paragraph paragraph__md-2 mb-sm">
             The Puerto Rican artist creates captivating and dynamic music by
             fusing Electronic, Jazz, Chillwave, R&B, Rock, and House genres.
           </p>

@@ -34,7 +34,7 @@ function Hero() {
       <p className="hero__text-1 paragraph">Hi, my name is</p>
       <h1 className="hero__heading--1">John Robles.</h1>
       <h2 className="hero__heading--2">I design and build websites.</h2>
-      <p className="hero__text-2 paragraph">
+      <p className="hero__text-2 paragraph paragraph__lg">
         I am a dedicated software engineer driven by the desire to innovate and
         create. Presently, I hold the position of a junior full stack developer
         at ScoreInc.

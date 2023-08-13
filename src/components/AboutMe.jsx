@@ -8,7 +8,7 @@ function AboutMe() {
     <section className="about mb-hg" id="about">
       <h2 className="about__heading heading--2">About Me</h2>
       <div className="about__text">
-        <p className="about__text-1 paragraph paragraph__indent">
+        <p className="about__text-1 paragraph paragraph__indent paragraph__lg">
           Ever since my childhood, my unwavering passion for technology has
           driven me forward. This led me to pursue a degree in Software
           Engineering at the University of Puerto Rico - Mayaguez. Alongside my
@@ -17,7 +17,7 @@ function AboutMe() {
           scratch. I take pride in tailoring these websites to meet the unique
           preferences and requirements of my clients.
         </p>
-        <p className="about__text-2 paragraph paragraph__indent">
+        <p className="about__text-2 paragraph paragraph__indent paragraph__lg">
           Furthermore, I have been fortunate enough to collaborate with diverse
           companies across various industries, enabling me to gain invaluable
           experience and learn from experts in the field of technology.
@@ -26,7 +26,7 @@ function AboutMe() {
           alongside the organization and further enhance my expertise by
           exploring new avenues.
         </p>
-        <p className="about__text-3 paragraph">
+        <p className="about__text-3 paragraph paragraph__lg">
           Some of the recent technologies I have been actively working with
           include:
         </p>

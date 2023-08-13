@@ -54,8 +54,14 @@
     font-weight: 300;
     @include hyphens;
   }
+  &__md-2 {
+    font-size: 2rem;
+    color: $color-grey-light-3;
+    font-weight: 300;
+    @include hyphens;
+  }
   &__lg {
-    font-size: 1.8rem;
+    font-size: 2.4rem;
     color: $color-grey-light-3;
     font-weight: 300;
     @include hyphens;
