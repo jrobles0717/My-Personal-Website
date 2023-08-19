@@ -28,8 +28,12 @@
 .paragraph {
   line-height: 1.5;
   font-size: 1.8rem;
-  color: $color-grey-light-3;
+  color: $color-grey-light-2;
   @include hyphens;
+
+  @include respond(phone) {
+    font-size: 2.2rem;
+  }
 
   &__indent {
     text-indent: 4rem;
@@ -56,6 +60,12 @@
   }
   &__md-2 {
     font-size: 2rem;
+    color: $color-grey-light-3;
+    font-weight: 300;
+    @include hyphens;
+  }
+  &__md-3 {
+    font-size: 2.2rem;
     color: $color-grey-light-3;
     font-weight: 300;
     @include hyphens;

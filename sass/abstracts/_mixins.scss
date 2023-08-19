@@ -56,6 +56,23 @@ ORDER: Base + Typography > general layout + grid > page layout > components
   grid-template-rows:
     6rem repeat(5, minmax(min-content, max-content))
     minmax(6rem, 1fr);
+
+  @include respond(tab-port) {
+    grid-template-rows:
+      25vh repeat(5, minmax(min-content, max-content))
+      minmax(6rem, 1fr);
+  }
+  @include respond(tab-port-sm) {
+    grid-template-rows:
+      25vh repeat(5, minmax(min-content, max-content))
+      minmax(6rem, 1fr);
+  }
+
+  @include respond(phone) {
+    grid-template-rows:
+      25vh repeat(5, minmax(min-content, max-content))
+      minmax(6rem, 1fr);
+  }
 }
 
 // About Container

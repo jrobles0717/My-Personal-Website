@@ -65,7 +65,7 @@ function Experience() {
                   isWatric ? "experience__table--left__item-line-active" : ""
                 }`}
               ></div>
-              <div>
+              <div style={{ display: "flex" }}>
                 <span
                   className={`experience__table--left__item ${
                     isWatric ? "experience__table--left__item-selected" : ""
@@ -84,7 +84,7 @@ function Experience() {
                   isHealth ? "experience__table--left__item-line-active" : ""
                 }`}
               ></div>
-              <div>
+              <div style={{ display: "flex" }}>
                 <span
                   className={`experience__table--left__item ${
                     isHealth ? "experience__table--left__item-selected" : ""
@@ -103,7 +103,7 @@ function Experience() {
                   isCervantes ? "experience__table--left__item-line-active" : ""
                 }`}
               ></div>
-              <div>
+              <div style={{ display: "flex" }}>
                 <span
                   className={`experience__table--left__item ${
                     isCervantes ? "experience__table--left__item-selected" : ""
@@ -122,7 +122,7 @@ function Experience() {
                   isScore ? "experience__table--left__item-line-active" : ""
                 }`}
               ></div>
-              <div>
+              <div style={{ display: "flex" }}>
                 <span
                   className={`experience__table--left__item ${
                     isScore ? "experience__table--left__item-selected" : ""
