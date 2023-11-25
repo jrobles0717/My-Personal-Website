@@ -3,7 +3,7 @@ import "../../css/style.css";
 import { useEffect, useRef, useState } from "react";
 
 import AnchorLink from "react-anchor-link-smooth-scroll";
-import resumeJARP from "../../img/Resume-JARP-Aug2023.pdf";
+import resumeJARP from "../../img/Resume-JARP-Nov2023.pdf";
 import { useScrollToElement } from "../hooks/useScrollToElement";
 
 function MainNavigation() {

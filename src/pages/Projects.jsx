@@ -1,6 +1,6 @@
 import { FiExternalLink, FiGithub } from "react-icons/fi";
 
-import Card from "./Card";
+import Card from "../components/Card";
 import { useState } from "react";
 import voshMusic1200 from "../../img/vosh-music-1200.png";
 import voshMusic400 from "../../img/vosh-music-400.png";

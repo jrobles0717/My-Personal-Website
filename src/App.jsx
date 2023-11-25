@@ -1,35 +1,15 @@
-import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
-
-import AboutMe from "./components/AboutMe";
-import Contact from "./components/Contact";
+import AboutMe from "./pages/AboutMe";
+import Contact from "./pages/Contact";
 import Container from "./components/Container";
 import Email from "./components/Email";
-import Experience from "./components/Experience";
+import Experience from "./pages/Experience";
 import Footer from "./components/Footer";
-import Hero from "./components/Hero";
+import Hero from "./pages/Hero";
 import MainNavigation from "./components/MainNavigation";
-import Projects from "./components/Projects";
+import Projects from "./pages/Projects";
+import { BrowserRouter as Router } from "react-router-dom";
 import Social from "./components/Social";
 
-// function App() {
-//   return (
-//     <Router>
-//       <MainNavigation />
-//       <div className="container__sub">
-//         <Social direction="column" />
-//         <Email />
-//         <Routes>
-//           <Route exact path="/" element={<Hero />} />
-//           <Route path="/about" element={<AboutMe />} />
-//           <Route path="/experience" element={<Experience />} />
-//           <Route path="/projects" element={<Projects />} />
-//           <Route path="/contact" element={<Contact />} />
-//         </Routes>
-//       </div>
-//       <Footer />
-//     </Router>
-//   );
-// }
 function App() {
   return (
     <Router>

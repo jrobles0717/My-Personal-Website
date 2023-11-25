@@ -1,6 +1,6 @@
 import { MdKeyboardArrowRight, MdOutlineTexture } from "react-icons/md";
 
-import TableContent from "./TableContent";
+import TableContent from "../components/TableContent";
 import { useState } from "react";
 
 function Experience() {

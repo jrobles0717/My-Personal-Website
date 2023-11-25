@@ -1,10 +1,6 @@
-import {
-  FiFacebook,
-  FiGithub,
-  FiInstagram,
-  FiLinkedin,
-  FiTwitter,
-} from "react-icons/fi";
+import { FiFacebook, FiGithub, FiInstagram, FiLinkedin } from "react-icons/fi";
+
+import TwitterIcon from "../icons/TwitterIcon";
 
 function Social({ direction }) {
   if (direction === "column") {
@@ -32,14 +28,7 @@ function Social({ direction }) {
             </a>
           </li>
           <li className="social__item">
-            <a
-              href="https://twitter.com/j_robles0717"
-              className="icon"
-              target="_blank"
-              aria-label="Link to my Twitter Profile"
-            >
-              <FiTwitter className="social__icon" />
-            </a>
+            <TwitterIcon direction={direction} />
           </li>
           <li className="social__item">
             <a
@@ -91,14 +80,7 @@ function Social({ direction }) {
             </a>
           </li>
           <li className="social-row__item">
-            <a
-              href="https://twitter.com/j_robles0717"
-              className="icon"
-              target="_blank"
-              aria-label="Twitter"
-            >
-              <FiTwitter className="social-row__icon" />
-            </a>
+            <TwitterIcon direction={direction} />
           </li>
           <li className="social-row__item">
             <a
