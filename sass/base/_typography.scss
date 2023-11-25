@@ -27,7 +27,8 @@
 
 .paragraph {
   line-height: 1.5;
-  font-size: 1.8rem;
+  // font-size: 1.8rem;
+  // font-size: inherit;
   color: $color-grey-light-2;
   @include hyphens;
 
@@ -43,12 +44,14 @@
     font-size: 1.2rem;
     letter-spacing: 0.2rem;
     font-weight: 300;
+    color: $color-grey-light-3;
     @include hyphens;
   }
 
   &__sm {
     font-size: 1.4rem;
     font-weight: 300;
+    color: $color-grey-light-3;
     @include hyphens;
   }
 
@@ -59,19 +62,19 @@
     @include hyphens;
   }
   &__md-2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: $color-grey-light-3;
     font-weight: 300;
     @include hyphens;
   }
   &__md-3 {
-    font-size: 2.2rem;
+    font-size: 2rem;
     color: $color-grey-light-3;
     font-weight: 300;
     @include hyphens;
   }
   &__lg {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
     color: $color-grey-light-3;
     font-weight: 300;
     @include hyphens;

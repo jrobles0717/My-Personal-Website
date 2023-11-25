@@ -19,14 +19,14 @@ function TableContent({ current }) {
         <ul className="experience__table--right__list">
           <li className="experience__table--right__box-item">
             <MdKeyboardArrowRight className="experience__table--right__icon" />
-            <p className="experience__table--right__item paragraph paragraph-lg">
+            <p className="experience__table--right__item paragraph paragraph__md">
               Troubleshoot and resolve server bugs impacting the website's
               functionality.
             </p>
           </li>
           <li className="experience__table--right__box-item">
             <MdKeyboardArrowRight className="experience__table--right__icon" />
-            <p className="experience__table--right__item paragraph paragraph-lg">
+            <p className="experience__table--right__item paragraph paragraph__md">
               Successfully updated and added new information to several pages,
               specifically for upcoming products that are about to be launched
               in the market.
@@ -34,7 +34,7 @@ function TableContent({ current }) {
           </li>
           <li className="experience__table--right__box-item">
             <MdKeyboardArrowRight className="experience__table--right__icon" />
-            <p className="experience__table--right__item paragraph paragraph-lg">
+            <p className="experience__table--right__item paragraph paragraph__md">
               Proficiently developed frontend and cloud solutions utilizing a
               diverse stack of technologies, including Windows 10, Apache, PHP,
               HTML, CSS, Heroku, and HostGator.
@@ -59,7 +59,7 @@ function TableContent({ current }) {
         <ul className="experience__table--right__list">
           <li className="experience__table--right__box-item">
             <MdKeyboardArrowRight className="experience__table--right__icon" />
-            <p className="experience__table--right__item paragraph paragraph-lg">
+            <p className="experience__table--right__item paragraph paragraph__md">
               Designed, analyzed, documented, and deployed applications
               utilizing a diverse range of cutting-edge technologies, including
               XML, JSON, Java, Maven, Spring Boot, SFTP protocol, AWS, and MS
@@ -68,7 +68,7 @@ function TableContent({ current }) {
           </li>
           <li className="experience__table--right__box-item">
             <MdKeyboardArrowRight className="experience__table--right__icon" />
-            <p className="experience__table--right__item paragraph paragraph-lg">
+            <p className="experience__table--right__item paragraph paragraph__md">
               Developed robust file sharing, sending, and transfer solutions,
               seamlessly interfacing with client and internal systems,
               applications, software, and platforms. These solutions are built
@@ -77,7 +77,7 @@ function TableContent({ current }) {
           </li>
           <li className="experience__table--right__box-item">
             <MdKeyboardArrowRight className="experience__table--right__icon" />
-            <p className="experience__table--right__item paragraph paragraph-lg">
+            <p className="experience__table--right__item paragraph paragraph__md">
               Proficiently conducted comprehensive testing and updates within
               XML and JSON environments. Additionally, I have excelled in
               gathering requirements and producing meticulous documentation,
@@ -87,7 +87,7 @@ function TableContent({ current }) {
           </li>
           <li className="experience__table--right__box-item">
             <MdKeyboardArrowRight className="experience__table--right__icon" />
-            <p className="experience__table--right__item paragraph paragraph-lg">
+            <p className="experience__table--right__item paragraph paragraph__md">
               Successfully managed and maintained Windows Server and software
               written in Java, Maven, XML, and JSON. In addition, I have
               provided technical support engineering at L1-3, offering
@@ -113,7 +113,7 @@ function TableContent({ current }) {
         <ul className="experience__table--right__list">
           <li className="experience__table--right__box-item">
             <MdKeyboardArrowRight className="experience__table--right__icon" />
-            <p className="experience__table--right__item paragraph paragraph-lg">
+            <p className="experience__table--right__item paragraph paragraph__md">
               Participate in the full Software Development Life Cycle (SDLC)
               including requirements gathering, documentation, coding/execution,
               code review/testing, implementation and reports creation.
@@ -121,7 +121,7 @@ function TableContent({ current }) {
           </li>
           <li className="experience__table--right__box-item">
             <MdKeyboardArrowRight className="experience__table--right__icon" />
-            <p className="experience__table--right__item paragraph paragraph-lg">
+            <p className="experience__table--right__item paragraph paragraph__md">
               Develop solutions with JavaScript, PHP and Ninja JS for Microjuris
               Application for customer named Centrix participating in all phases
               of the Agile Software Development Life Cycle (SDLC).
@@ -129,7 +129,7 @@ function TableContent({ current }) {
           </li>
           <li className="experience__table--right__box-item">
             <MdKeyboardArrowRight className="experience__table--right__icon" />
-            <p className="experience__table--right__item paragraph paragraph-lg">
+            <p className="experience__table--right__item paragraph paragraph__md">
               Generate reports with JasperReports, an open-source tool which
               allows to write and edit report in Sodalis Application while
               creating and configuring API’s in Unify Application.
@@ -137,7 +137,7 @@ function TableContent({ current }) {
           </li>
           <li className="experience__table--right__box-item">
             <MdKeyboardArrowRight className="experience__table--right__icon" />
-            <p className="experience__table--right__item paragraph paragraph-lg">
+            <p className="experience__table--right__item paragraph paragraph__md">
               Create and develop Transaction Request API’s (Payment Gateway).
             </p>
           </li>
@@ -160,7 +160,7 @@ function TableContent({ current }) {
         <ul className="experience__table--right__list">
           <li className="experience__table--right__box-item">
             <MdKeyboardArrowRight className="experience__table--right__icon" />
-            <p className="experience__table--right__item paragraph paragraph-lg">
+            <p className="experience__table--right__item paragraph paragraph__md">
               Develop comprehensive front-end and back-end solutions using a
               range of cutting-edge technologies, including React.js,
               TypeScript, Node.js, Contentful, Bit.dev, Auth0, Pulumi, and AWS.
@@ -168,7 +168,7 @@ function TableContent({ current }) {
           </li>
           <li className="experience__table--right__box-item">
             <MdKeyboardArrowRight className="experience__table--right__icon" />
-            <p className="experience__table--right__item paragraph paragraph-lg">
+            <p className="experience__table--right__item paragraph paragraph__md">
               Provide guidance, leadership, and solutions to my team,
               facilitating goal achievement while actively contributing to their
               coding skills growth through constructive feedback and leveraging
@@ -177,7 +177,7 @@ function TableContent({ current }) {
           </li>
           <li className="experience__table--right__box-item">
             <MdKeyboardArrowRight className="experience__table--right__icon" />
-            <p className="experience__table--right__item paragraph paragraph-lg">
+            <p className="experience__table--right__item paragraph paragraph__md">
               As a key contributor to an ongoing project at a prominent global
               company, actively involved in development and driving a 50%
               improvement in project performance through close collaboration
@@ -186,7 +186,7 @@ function TableContent({ current }) {
           </li>
           <li className="experience__table--right__box-item">
             <MdKeyboardArrowRight className="experience__table--right__icon" />
-            <p className="experience__table--right__item paragraph paragraph-lg">
+            <p className="experience__table--right__item paragraph paragraph__md">
               Participate in all facets of the Full Software Development Life
               Cycle (SDLC), encompassing requirements gathering, meticulous
               documentation, proficient coding and execution, thorough code

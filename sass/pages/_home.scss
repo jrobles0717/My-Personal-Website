@@ -101,6 +101,10 @@
       grid-column: full-start / col-end 6;
     }
   }
+
+  &__text-green {
+    color: $color-primary;
+  }
 }
 
 .about {
@@ -358,7 +362,7 @@
         display: inline-block;
         text-decoration: none;
         color: currentColor;
-        font-size: 2rem;
+        // font-size: 2rem;
 
         @include respond(phone) {
           column-gap: 0.5rem;

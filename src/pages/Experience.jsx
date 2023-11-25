@@ -67,7 +67,7 @@ function Experience() {
               ></div>
               <div style={{ display: "flex" }}>
                 <span
-                  className={`experience__table--left__item ${
+                  className={`experience__table--left__item paragraph__md ${
                     isWatric ? "experience__table--left__item-selected" : ""
                   }`}
                 >
@@ -86,7 +86,7 @@ function Experience() {
               ></div>
               <div style={{ display: "flex" }}>
                 <span
-                  className={`experience__table--left__item ${
+                  className={`experience__table--left__item paragraph__md ${
                     isHealth ? "experience__table--left__item-selected" : ""
                   }`}
                 >
@@ -105,7 +105,7 @@ function Experience() {
               ></div>
               <div style={{ display: "flex" }}>
                 <span
-                  className={`experience__table--left__item ${
+                  className={`experience__table--left__item paragraph__md ${
                     isCervantes ? "experience__table--left__item-selected" : ""
                   }`}
                 >
@@ -124,7 +124,7 @@ function Experience() {
               ></div>
               <div style={{ display: "flex" }}>
                 <span
-                  className={`experience__table--left__item ${
+                  className={`experience__table--left__item paragraph__md ${
                     isScore ? "experience__table--left__item-selected" : ""
                   }`}
                 >

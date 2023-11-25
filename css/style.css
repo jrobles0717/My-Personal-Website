@@ -184,7 +184,6 @@ body {
 
 .paragraph {
   line-height: 1.5;
-  font-size: 1.8rem;
   color: #b9bfc4;
   -moz-hyphens: auto;
   -ms-hyphens: auto;
@@ -199,6 +198,7 @@ body {
     font-size: 1.2rem;
     letter-spacing: 0.2rem;
     font-weight: 300;
+    color: #a5aaae;
     -moz-hyphens: auto;
     -ms-hyphens: auto;
     -webkit-hyphens: auto;
@@ -206,6 +206,7 @@ body {
   .paragraph__sm {
     font-size: 1.4rem;
     font-weight: 300;
+    color: #a5aaae;
     -moz-hyphens: auto;
     -ms-hyphens: auto;
     -webkit-hyphens: auto;
@@ -219,7 +220,7 @@ body {
     -webkit-hyphens: auto;
     hyphens: auto; }
   .paragraph__md-2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: #a5aaae;
     font-weight: 300;
     -moz-hyphens: auto;
@@ -227,7 +228,7 @@ body {
     -webkit-hyphens: auto;
     hyphens: auto; }
   .paragraph__md-3 {
-    font-size: 2.2rem;
+    font-size: 2rem;
     color: #a5aaae;
     font-weight: 300;
     -moz-hyphens: auto;
@@ -235,7 +236,7 @@ body {
     -webkit-hyphens: auto;
     hyphens: auto; }
   .paragraph__lg {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
     color: #a5aaae;
     font-weight: 300;
     -moz-hyphens: auto;
@@ -675,6 +676,8 @@ body {
   @media only screen and (max-width: 37.5em) {
     .hero a {
       grid-column: full-start / col-end 6; } }
+  .hero__text-green {
+    color: #99ed1b; }
 
 .about {
   grid-column: center-start / center-end;
@@ -872,8 +875,7 @@ body {
       .experience__table--left__item {
         display: inline-block;
         text-decoration: none;
-        color: currentColor;
-        font-size: 2rem; }
+        color: currentColor; }
         @media only screen and (max-width: 37.5em) {
           .experience__table--left__item {
             column-gap: 0.5rem;

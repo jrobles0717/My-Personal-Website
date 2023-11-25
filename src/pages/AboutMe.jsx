@@ -8,7 +8,7 @@ function AboutMe() {
     <section className="about mb-hg" id="about">
       <h2 className="about__heading heading--2">About Me</h2>
       <div className="about__text">
-        <p className="about__text-1 paragraph paragraph__indent paragraph__md-3">
+        <p className="about__text-1 paragraph paragraph__indent paragraph__md">
           Ever since my childhood, my unwavering passion for technology has
           driven me forward. This led me to pursue a degree in Software
           Engineering at the University of Puerto Rico - Mayaguez. Alongside my
@@ -17,7 +17,7 @@ function AboutMe() {
           scratch. I take pride in tailoring these websites to meet the unique
           preferences and requirements of my clients.
         </p>
-        <p className="about__text-2 paragraph paragraph__indent paragraph__md-3">
+        <p className="about__text-2 paragraph paragraph__indent paragraph__md">
           Furthermore, I have been fortunate enough to collaborate with diverse
           companies across various industries, enabling me to gain invaluable
           experience and learn from experts in the field of technology.
@@ -26,40 +26,44 @@ function AboutMe() {
           alongside the organization and further enhance my expertise by
           exploring new avenues.
         </p>
-        <p className="about__text-3 paragraph paragraph__md-3">
+        <p className="about__text-3 paragraph paragraph__md">
           Some of the recent technologies I have been actively working with
           include:
         </p>
         <ul className="about__text__list">
           <li className="about__text__box-item">
             <MdKeyboardArrowRight className="about__text__icon" />
-            <span className="about__text__item about__text__item-1">React</span>
+            <span className="about__text__item about__text__item-1 paragraph__md">
+              React
+            </span>
           </li>
           <li className="about__text__box-item">
             <MdKeyboardArrowRight className="about__text__icon" />
-            <span className="about__text__item about__text__item-2">
+            <span className="about__text__item about__text__item-2 paragraph__md">
               JavaScript (ES6+)
             </span>
           </li>
           <li className="about__text__box-item">
             <MdKeyboardArrowRight className="about__text__icon" />
-            <span className="about__text__item about__text__item-3">
+            <span className="about__text__item about__text__item-3 paragraph__md">
               TypeScript
             </span>
           </li>
           <li className="about__text__box-item">
             <MdKeyboardArrowRight className="about__text__icon" />
-            <span className="about__text__item about__text__item-4">
+            <span className="about__text__item about__text__item-4 paragraph__md">
               (S)CSS3
             </span>
           </li>
           <li className="about__text__box-item">
             <MdKeyboardArrowRight className="about__text__icon" />
-            <span className="about__text__item about__text__item-5">Java</span>
+            <span className="about__text__item about__text__item-5 paragraph__md">
+              Java
+            </span>
           </li>
           <li className="about__text__box-item">
             <MdKeyboardArrowRight className="about__text__icon" />
-            <span className="about__text__item about__text__item-6">
+            <span className="about__text__item about__text__item-6 paragraph__md">
               Node.js
             </span>
           </li>
