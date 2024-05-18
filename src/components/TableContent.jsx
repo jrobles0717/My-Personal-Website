@@ -155,7 +155,7 @@ function TableContent({ current }) {
           <span className="heading__span">@ ScoreInc</span>
         </h3>
         <p className="experience__table--right__date paragraph paragraph__sm mb-sm">
-          April 2023 - Present
+          April - April 2024
         </p>
         <ul className="experience__table--right__list">
           <li className="experience__table--right__box-item">
@@ -194,6 +194,60 @@ function TableContent({ current }) {
               comprehensive reports. Actively contribute to Continuous
               Integration/Continuous Deployment (CI/CD) processes throughout the
               development journey.
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div
+        className={`experience__table--right-container experience__table--right-container--4 ${
+          current === "leadwire"
+            ? "experience__table--right-container--active"
+            : ""
+        }`}
+      >
+        <h3 className="experience__table--right__heading heading--4">
+          Lead Full Stack Engineer{" "}
+          <span className="heading__span">@ LeadWire, LLC</span>
+        </h3>
+        <p className="experience__table--right__date paragraph paragraph__sm mb-sm">
+          April 2024 - Present
+        </p>
+        <ul className="experience__table--right__list">
+          <li className="experience__table--right__box-item">
+            <MdKeyboardArrowRight className="experience__table--right__icon" />
+            <p className="experience__table--right__item paragraph paragraph__md">
+              Effectively led my team and managed projects, demonstrating my
+              proficiency in architecting the infrastructure of complex
+              applications.
+            </p>
+          </li>
+          <li className="experience__table--right__box-item">
+            <MdKeyboardArrowRight className="experience__table--right__icon" />
+            <p className="experience__table--right__item paragraph paragraph__md">
+              Delivering robust solutions to enhance performance and resolve
+              potential application errors, thereby ensuring optimal
+              functionality and a superior user experience.
+            </p>
+          </li>
+          <li className="experience__table--right__box-item">
+            <MdKeyboardArrowRight className="experience__table--right__icon" />
+            <p className="experience__table--right__item paragraph paragraph__md">
+              We leverage Heroku and Netlify as our cloud architecture, employ
+              React for the frontend, and utilize Node.js and Express.js for the
+              backend. Our database infrastructure comprises Postgresql with
+              Prisma and GraphQL, enabling robust and efficient data management.
+            </p>
+          </li>
+          <li className="experience__table--right__box-item">
+            <MdKeyboardArrowRight className="experience__table--right__icon" />
+            <p className="experience__table--right__item paragraph paragraph__md">
+              Engage in the entire Software Development Life Cycle (SDLC),
+              encompassing requirements gathering, thorough documentation,
+              proficient coding, meticulous code review, seamless
+              implementation, comprehensive testing, and report generation,
+              while integrating Jira as an agile methodology. Actively
+              contribute to Continuous Integration/Continuous Deployment (CI/CD)
+              processes to ensure a streamlined development journey.
             </p>
           </li>
         </ul>

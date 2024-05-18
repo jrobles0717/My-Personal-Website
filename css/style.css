@@ -677,8 +677,14 @@ body {
   @media only screen and (max-width: 37.5em) {
     .hero a {
       grid-column: full-start / col-end 6; } }
+  .hero__text-position {
+    font-weight: bold;
+    color: #79bb16; }
   .hero__text-green {
+    font-weight: bold;
     color: #99ed1b; }
+    .hero__text-green:hover {
+      cursor: pointer; }
 
 .about {
   grid-column: center-start / center-end;
@@ -807,7 +813,7 @@ body {
       object-fit: cover; }
       @media only screen and (max-width: 75em) {
         .about picture img {
-          width: 90%; } }
+          width: 100%; } }
       @media only screen and (max-width: 46.875em) {
         .about picture img {
           width: 30%; } }
@@ -894,9 +900,10 @@ body {
           display: flex;
           column-gap: 2rem;
           align-items: center;
-          cursor: pointer;
           padding-right: 2rem;
           transition: all 0.3s; }
+          .experience__table--left__item-box:focus, .experience__table--left__item-box:hover {
+            cursor: pointer; }
           @media only screen and (max-width: 37.5em) {
             .experience__table--left__item-box {
               column-gap: 0.5rem;

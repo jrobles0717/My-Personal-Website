@@ -8,6 +8,7 @@ function Experience() {
   const [isHealth, setIsHealth] = useState(false);
   const [isCervantes, setIsCervantes] = useState(false);
   const [isScore, setIsScore] = useState(false);
+  const [isLeadwire, setIsLeadwire] = useState(false);
   const [currentExp, setCurrentExp] = useState("watric");
 
   const experienceHandler = (e) => {
@@ -19,6 +20,7 @@ function Experience() {
     setIsHealth(false);
     setIsCervantes(false);
     setIsScore(false);
+    setIsLeadwire(false);
     setCurrentExp("watric");
     console.log("watric");
   };
@@ -28,6 +30,7 @@ function Experience() {
     setIsHealth(true);
     setIsCervantes(false);
     setIsScore(false);
+    setIsLeadwire(false);
     setCurrentExp("health");
     console.log("health computer systems");
   };
@@ -37,6 +40,7 @@ function Experience() {
     setIsHealth(false);
     setIsCervantes(true);
     setIsScore(false);
+    setIsLeadwire(false);
     setCurrentExp("cervantes");
     console.log("the cervantes group");
   };
@@ -46,8 +50,19 @@ function Experience() {
     setIsHealth(false);
     setIsCervantes(false);
     setIsScore(true);
+    setIsLeadwire(false);
     setCurrentExp("score");
     console.log("score");
+  };
+  const leadwireHandler = (e) => {
+    e.preventDefault();
+    setIsWatric(false);
+    setIsHealth(false);
+    setIsCervantes(false);
+    setIsScore(false);
+    setIsLeadwire(true);
+    setCurrentExp("leadwire");
+    console.log("leadwire");
   };
 
   return (
@@ -129,6 +144,25 @@ function Experience() {
                   }`}
                 >
                   ScoreInc
+                </span>
+              </div>
+            </li>
+            <li
+              className="experience__table--left__item-box"
+              onClick={leadwireHandler}
+            >
+              <div
+                className={`experience__table--left__item-line ${
+                  isLeadwire ? "experience__table--left__item-line-active" : ""
+                }`}
+              ></div>
+              <div style={{ display: "flex" }}>
+                <span
+                  className={`experience__table--left__item paragraph__md ${
+                    isLeadwire ? "experience__table--left__item-selected" : ""
+                  }`}
+                >
+                  LeadWire
                 </span>
               </div>
             </li>

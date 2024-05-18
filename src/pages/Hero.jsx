@@ -27,7 +27,9 @@ function Hero() {
     setIsOpen(!isOpen);
   };
 
-  // Rest of the component code
+  const handleOnClickCompany = () => {
+    window.open("https://www.leadwireapp.com", "_blank");
+  };
 
   return (
     <section className="hero" id="home">
@@ -36,8 +38,11 @@ function Hero() {
       <h2 className="hero__heading--2">I design and build websites.</h2>
       <p className="hero__text-2 paragraph paragraph__md-2">
         I am a dedicated software engineer driven by the desire to innovate and
-        create. Presently, I hold the position of a junior full stack developer
-        at <span className="hero__text-green">ScoreInc.</span>
+        create. Currently, I hold the position of a{" "}
+        <span className="hero__text-position">Lead Full Stack Engineer</span> at{" "}
+        <span className="hero__text-green" onClick={handleOnClickCompany}>
+          LeadWire, LLC.
+        </span>
       </p>
       <AnchorLink
         className="btn"

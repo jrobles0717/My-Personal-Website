@@ -103,8 +103,17 @@
     }
   }
 
+  &__text-position {
+    font-weight: bold;
+    color: $color-primary-dark;
+  }
+
   &__text-green {
+    font-weight: bold;
     color: $color-primary;
+    &:hover {
+      cursor: pointer;
+    }
   }
 }
 
@@ -278,7 +287,7 @@
       object-fit: cover;
 
       @include respond(tab-land) {
-        width: 90%;
+        width: 100%;
       }
 
       @include respond(tab-port-sm) {
@@ -372,7 +381,6 @@
         display: inline-block;
         text-decoration: none;
         color: currentColor;
-        // font-size: 2rem;
 
         @include respond(phone) {
           column-gap: 0.5rem;
@@ -384,9 +392,12 @@
           display: flex;
           column-gap: 2rem;
           align-items: center;
-          cursor: pointer;
           padding-right: 2rem;
           transition: all 0.3s;
+          &:focus,
+          &:hover {
+            cursor: pointer;
+          }
 
           @include respond(phone) {
             column-gap: 0.5rem;

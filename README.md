@@ -9,3 +9,7 @@
 # How to install and build project
 
 1. Run in your current directory terminal `npm install` and then `npm run build`
+
+# Node JS version
+
+- Required node js version 16
