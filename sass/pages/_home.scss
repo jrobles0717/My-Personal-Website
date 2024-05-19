@@ -285,6 +285,7 @@
       width: 100%;
       height: auto;
       object-fit: cover;
+      border-radius: 10px;
 
       @include respond(tab-land) {
         width: 100%;

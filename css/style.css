@@ -810,7 +810,8 @@ body {
       grid-row: 3 / 5;
       width: 100%;
       height: auto;
-      object-fit: cover; }
+      object-fit: cover;
+      border-radius: 10px; }
       @media only screen and (max-width: 75em) {
         .about picture img {
           width: 100%; } }
