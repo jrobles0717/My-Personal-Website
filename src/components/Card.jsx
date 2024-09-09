@@ -3,6 +3,9 @@ import { FiExternalLink, FiFolder, FiGithub } from "react-icons/fi";
 function Card({ project }) {
   // finding github repos
   const findGithubRepo = (repo) => {
+    if (repo === "Blogs") {
+      return "https://github.com/jrobles0717/Blog-NextJS-Project";
+    }
     if (repo === "Nexter") {
       return "https://github.com/jrobles0717/Nexter";
     }
@@ -30,6 +33,9 @@ function Card({ project }) {
   };
   // finding website
   const findWebsite = (repo) => {
+    if (repo === "Blogs") {
+      return "https://blog-next-js-project.vercel.app";
+    }
     if (repo === "Nexter") {
       return "https://nexter-jarobles.netlify.app";
     }
@@ -48,6 +54,9 @@ function Card({ project }) {
   };
   // finding description
   const findDescription = (repo) => {
+    if (repo === "Blogs") {
+      return "Discover tech insights at John's Next Blog. This project has been a stepping stone in mastering the Next.js framework.";
+    }
     if (repo === "Nexter") {
       return "Nexter can help you find a sweet home to live. The purpose of this project was to design a webpage using grid implemantation";
     }
@@ -122,6 +131,17 @@ function Card({ project }) {
           <li className="projects__card--footer__item">Expo</li>
           <li className="projects__card--footer__item">Yarn</li>
           <li className="projects__card--footer__item">SQLite</li>
+        </ul>
+      );
+    }
+    if (repo === "Blogs") {
+      return (
+        <ul className="projects__card--footer__list">
+          <li className="projects__card--footer__item">React</li>
+          <li className="projects__card--footer__item">TypeScript</li>
+          <li className="projects__card--footer__item">Next</li>
+          <li className="projects__card--footer__item">MongoDB</li>
+          <li className="projects__card--footer__item">Vercel</li>
         </ul>
       );
     }

@@ -40,7 +40,7 @@ function AboutMe() {
           <li className="about__text__box-item">
             <MdKeyboardArrowRight className="about__text__icon" />
             <span className="about__text__item about__text__item-2 paragraph__md">
-              JavaScript (ES6+)
+              PostgreSQL
             </span>
           </li>
           <li className="about__text__box-item">
@@ -52,19 +52,19 @@ function AboutMe() {
           <li className="about__text__box-item">
             <MdKeyboardArrowRight className="about__text__icon" />
             <span className="about__text__item about__text__item-4 paragraph__md">
-              (S)CSS3
+              Heroku
             </span>
           </li>
           <li className="about__text__box-item">
             <MdKeyboardArrowRight className="about__text__icon" />
             <span className="about__text__item about__text__item-5 paragraph__md">
-              Java
+              GraphQL
             </span>
           </li>
           <li className="about__text__box-item">
             <MdKeyboardArrowRight className="about__text__icon" />
             <span className="about__text__item about__text__item-6 paragraph__md">
-              Node.js
+              Node/Express js
             </span>
           </li>
         </ul>

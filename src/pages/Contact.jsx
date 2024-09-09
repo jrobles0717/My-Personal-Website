@@ -1,3 +1,4 @@
+import MailtoLink from "../components/MailtoLink";
 import Social from "../components/Social";
 
 function Contact() {
@@ -11,6 +12,7 @@ function Contact() {
         reach out. I am committed to prompt and helpful responses, working
         together with you to achieve your goals.
       </p>
+
       <a
         href="mailto:j_robles0717@yahoo.com"
         target="_blank"

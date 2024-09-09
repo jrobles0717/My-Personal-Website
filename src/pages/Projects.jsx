@@ -2,9 +2,9 @@ import { FiExternalLink, FiGithub } from "react-icons/fi";
 
 import Card from "../components/Card";
 import { useState } from "react";
-import voshMusic1200 from "../../img/vosh-music-1200.png";
-import voshMusic400 from "../../img/vosh-music-400.png";
-import voshMusic800 from "../../img/vosh-music-800.png";
+import voshMusic1200 from "../../img/Vos-hero-banner-blue-1200.png";
+import voshMusic400 from "../../img/Vos-hero-banner-blue-400.png";
+import voshMusic800 from "../../img/Vos-hero-banner-blue-800.png";
 
 function Projects() {
   const [toggleBtn, setToggleBtn] = useState(false);
@@ -91,22 +91,22 @@ function Projects() {
       </h3>
       <ul className="projects__other mb-lg">
         <li className="projects__other__item projects__other__item--1">
-          <Card project="Nexter" />
+          <Card project="Blogs" />
         </li>
         <li className="projects__other__item projects__other__item--2">
-          <Card project="Trillo" />
+          <Card project="Nexter" />
         </li>
         <li className="projects__other__item projects__other__item--3">
-          <Card project="Natours" />
+          <Card project="Trillo" />
         </li>
         <li className="projects__other__item projects__other__item--4">
-          <Card project="Omnifood" />
+          <Card project="Natours" />
         </li>
         <li className="projects__other__item projects__other__item--5">
-          <Card project="Forkify" />
+          <Card project="Omnifood" />
         </li>
         <li className="projects__other__item projects__other__item--6">
-          <Card project="Capstone" />
+          <Card project="Forkify" />
         </li>
         {toggleBtn ? (
           <>
@@ -115,10 +115,17 @@ function Projects() {
                 toggleBtn ? "" : "projects__other__item--hidden"
               }`}
             >
-              <Card project="Twitter" />
+              <Card project="Capstone" />
             </li>
             <li
               className={`projects__other__item projects__other__item--8 ${
+                toggleBtn ? "" : "projects__other__item--hidden"
+              }`}
+            >
+              <Card project="Twitter" />
+            </li>
+            <li
+              className={`projects__other__item projects__other__item--10 ${
                 toggleBtn ? "" : "projects__other__item--hidden"
               }`}
             >
