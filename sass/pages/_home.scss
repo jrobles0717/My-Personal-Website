@@ -830,16 +830,17 @@
     color: $color-primary;
     letter-spacing: 0.2rem;
   }
+
   &__title {
     grid-column: 2 / 3;
     grid-row: 3 / 4;
     font-size: 5rem;
   }
+
   &__paragraph {
     grid-column: 2 / 3;
     grid-row: 4 / 5;
     line-height: 1.5;
-    // letter-spacing: 0.1rem;
     font-weight: 400;
     text-align: center;
 
@@ -847,6 +848,7 @@
       font-size: 2rem;
     }
   }
+
   &__btn {
     grid-column: 2 / 3;
     grid-row: 5 / 6;

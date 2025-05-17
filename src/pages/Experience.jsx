@@ -1,5 +1,4 @@
-import { MdKeyboardArrowRight, MdOutlineTexture } from "react-icons/md";
-
+import { MdKeyboardArrowRight } from "react-icons/md";
 import TableContent from "../components/TableContent";
 import { useState } from "react";
 
@@ -11,9 +10,6 @@ function Experience() {
   const [isLeadwire, setIsLeadwire] = useState(false);
   const [currentExp, setCurrentExp] = useState("watric");
 
-  const experienceHandler = (e) => {
-    console.log(e.target);
-  };
   const watricHandler = (e) => {
     e.preventDefault();
     setIsWatric(true);
@@ -24,6 +20,7 @@ function Experience() {
     setCurrentExp("watric");
     console.log("watric");
   };
+
   const healthHandler = (e) => {
     e.preventDefault();
     setIsWatric(false);
@@ -34,6 +31,7 @@ function Experience() {
     setCurrentExp("health");
     console.log("health computer systems");
   };
+
   const cervantesHandler = (e) => {
     e.preventDefault();
     setIsWatric(false);
@@ -44,6 +42,7 @@ function Experience() {
     setCurrentExp("cervantes");
     console.log("the cervantes group");
   };
+
   const scoreHandler = (e) => {
     e.preventDefault();
     setIsWatric(false);
@@ -54,6 +53,7 @@ function Experience() {
     setCurrentExp("score");
     console.log("score");
   };
+
   const leadwireHandler = (e) => {
     e.preventDefault();
     setIsWatric(false);
@@ -67,13 +67,17 @@ function Experience() {
 
   return (
     <section className="experience mb-hg" id="experience">
-      <h2 className="experience__heading heading--2">Where I've Worked</h2>
+      <h2 className="experience__heading heading--2" data-aos="fade-up">
+        Where I've Worked
+      </h2>
       <div className="experience__table">
         <div className="experience__table--left">
           <ul className="experience__table--left__list">
             <li
               className="experience__table--left__item-box"
               onClick={watricHandler}
+              data-aos="fade-right"
+              data-aos-delay="100"
             >
               <div
                 className={`experience__table--left__item-line ${
@@ -93,6 +97,8 @@ function Experience() {
             <li
               className="experience__table--left__item-box"
               onClick={healthHandler}
+              data-aos="fade-right"
+              data-aos-delay="200"
             >
               <div
                 className={`experience__table--left__item-line ${
@@ -112,6 +118,8 @@ function Experience() {
             <li
               className="experience__table--left__item-box"
               onClick={cervantesHandler}
+              data-aos="fade-right"
+              data-aos-delay="300"
             >
               <div
                 className={`experience__table--left__item-line ${
@@ -131,6 +139,8 @@ function Experience() {
             <li
               className="experience__table--left__item-box"
               onClick={scoreHandler}
+              data-aos="fade-right"
+              data-aos-delay="400"
             >
               <div
                 className={`experience__table--left__item-line ${
@@ -150,6 +160,8 @@ function Experience() {
             <li
               className="experience__table--left__item-box"
               onClick={leadwireHandler}
+              data-aos="fade-right"
+              data-aos-delay="500"
             >
               <div
                 className={`experience__table--left__item-line ${

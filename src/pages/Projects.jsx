@@ -8,9 +8,19 @@ import voshMusic800 from "../../img/Vos-hero-banner-blue-800.png";
 
 function Projects() {
   const [toggleBtn, setToggleBtn] = useState(false);
+  const [reverseAnimation, setReverseAnimation] = useState(false);
 
   const toggleBtnHandler = () => {
-    setToggleBtn(!toggleBtn);
+    if (toggleBtn) {
+      // Trigger reverse animation when hiding cards
+      setReverseAnimation(true);
+      setTimeout(() => {
+        setToggleBtn(false);
+        setReverseAnimation(false); // Reset reverse animation state
+      }, 300); // Match the animation duration (300ms)
+    } else {
+      setToggleBtn(true);
+    }
   };
 
   const handleGoToLink = () => {
@@ -19,13 +29,15 @@ function Projects() {
 
   return (
     <section className="projects" id="projects">
-      <h2 className="projects__heading heading--2 mb-md">
+      <h2 className="projects__heading heading--2 mb-md" data-aos="fade-up">
         Some Things I've Built
       </h2>
       <div
         className="projects__featured mb-hg"
         onClick={handleGoToLink}
         title="https://vosh-music.com/"
+        data-aos="fade-up" // AOS animation for the featured project container
+        data-aos-delay="100" // Delay for the animation
       >
         <picture>
           <img
@@ -38,18 +50,34 @@ function Projects() {
             height="600"
           />
         </picture>
-        <div className="projects__featured--text-box">
+        <div
+          className="projects__featured--text-box"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
           <p className="projects__featured--text-box__heading-sub paragraph__md">
             Featured Project
           </p>
-          <h3 className="projects__featured--text-box__heading heading--3 mb-sm">
+          <h3
+            className="projects__featured--text-box__heading heading--3 mb-sm"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
             Vosh Music
           </h3>
-          <p className="projects__featured--text-box__paragraph paragraph__sm mb-sm">
+          <p
+            className="projects__featured--text-box__paragraph paragraph__sm mb-sm"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
             The Puerto Rican artist creates captivating and dynamic music by
             fusing Electronic, Jazz, Chillwave, R&B, Rock, and House genres.
           </p>
-          <ul className="projects__featured--text-box__list mb-sm">
+          <ul
+            className="projects__featured--text-box__list mb-sm"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
             <li className="projects__featured--text-box__item projects__featured--text-box__item--1">
               React
             </li>
@@ -66,7 +94,11 @@ function Projects() {
               Netlify
             </li>
           </ul>
-          <div className="projects__featured--text-box__link">
+          <div
+            className="projects__featured--text-box__link"
+            data-aos="fade-up"
+            data-aos-delay="600"
+          >
             <a
               href="https://github.com/jrobles0717/Vos-Website"
               target="_blank"
@@ -86,54 +118,82 @@ function Projects() {
           </div>
         </div>
       </div>
-      <h3 className="projects__heading-2 heading--2 mb-md">
+      <h3 className="projects__heading-2 heading--2 mb-md" data-aos="fade-up">
         Other Noteworthy Projects
       </h3>
       <ul className="projects__other mb-lg">
-        <li className="projects__other__item projects__other__item--1">
+        <li
+          className="projects__other__item projects__other__item--1"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
           <Card project="Blogs" />
         </li>
-        <li className="projects__other__item projects__other__item--2">
+        <li
+          className="projects__other__item projects__other__item--2"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
           <Card project="Nexter" />
         </li>
-        <li className="projects__other__item projects__other__item--3">
+        <li
+          className="projects__other__item projects__other__item--3"
+          data-aos="fade-up"
+          data-aos-delay="300"
+        >
           <Card project="Trillo" />
         </li>
-        <li className="projects__other__item projects__other__item--4">
+        <li
+          className="projects__other__item projects__other__item--4"
+          data-aos="fade-up"
+          data-aos-delay="400"
+        >
           <Card project="Natours" />
         </li>
-        <li className="projects__other__item projects__other__item--5">
+        <li
+          className="projects__other__item projects__other__item--5"
+          data-aos="fade-up"
+          data-aos-delay="500"
+        >
           <Card project="Omnifood" />
         </li>
-        <li className="projects__other__item projects__other__item--6">
+        <li
+          className="projects__other__item projects__other__item--6"
+          data-aos="fade-up"
+          data-aos-delay="600"
+        >
           <Card project="Forkify" />
         </li>
-        {toggleBtn ? (
+        {toggleBtn && (
           <>
             <li
               className={`projects__other__item projects__other__item--7 ${
-                toggleBtn ? "" : "projects__other__item--hidden"
+                reverseAnimation ? "aos-reverse" : ""
               }`}
+              data-aos="fade-up"
+              data-aos-delay="100"
             >
               <Card project="Capstone" />
             </li>
             <li
               className={`projects__other__item projects__other__item--8 ${
-                toggleBtn ? "" : "projects__other__item--hidden"
+                reverseAnimation ? "aos-reverse" : ""
               }`}
+              data-aos="fade-up"
+              data-aos-delay="200"
             >
               <Card project="Twitter" />
             </li>
             <li
               className={`projects__other__item projects__other__item--10 ${
-                toggleBtn ? "" : "projects__other__item--hidden"
+                reverseAnimation ? "aos-reverse" : ""
               }`}
+              data-aos="fade-up"
+              data-aos-delay="300"
             >
               <Card project="Guerrilla" />
-            </li>{" "}
+            </li>
           </>
-        ) : (
-          ""
         )}
       </ul>
       <div className="projects__btn mb-hg">
