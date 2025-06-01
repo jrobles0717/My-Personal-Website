@@ -3,7 +3,7 @@ import "../../css/style.css";
 import { useEffect, useRef, useState } from "react";
 
 import AnchorLink from "react-anchor-link-smooth-scroll";
-import resumeJARP from "../../img/Resume-JARP-Aug-2024.pdf";
+import resumeJARP from "../../img/John A. Robles Perez Resume-MAY-2025.pdf";
 import { useScrollToElement } from "../hooks/useScrollToElement";
 
 function MainNavigation() {
